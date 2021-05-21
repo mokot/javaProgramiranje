@@ -1,0 +1,395 @@
+/**
+ * BARVE:
+ * 
+ * Poglavje 01: rgb(255, 245, 157) = rumena
+ * Poglavje 02: rgb(255, 204, 128) = oranzna
+ * Poglavje 03: rgb(248, 187, 208) = roza
+ * Poglavje 04: rgb(206, 147, 216) = vijolicna
+ * Poglavje 05: rgb(129, 212, 250) = modra
+ * Poglavje 06: rgb(197, 225, 165) = zelena
+ *
+ * Poglavje Vaje: rgb(108, 203, 196) = modro-zelena
+ * Poglavje Finale: rgb(239, 93, 90) = rdeca
+ * Poglavje Razno: rgb(213, 219, 219) = siva
+ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.mokot {
+    font-weight: normal; 
+    opacity: 0.75; 
+    color: grey; 
+    position: fixed; 
+    bottom: 0; 
+    right:0.75em;
+ }
+
+/* index.html */
+
+.glavnaVsebina {
+    margin-top: 7em;
+}
+
+.glavnaNaslov {
+    font-size: 7.5em;
+    text-transform: uppercase;
+    margin-top: -0.15em;
+    margin-bottom: 0.30em;
+}
+
+.glavnaNaslov01 {
+    color: rgb(238, 112, 22);
+}
+
+.glavnaNaslov02 {
+    color: rgb(83, 130, 161);
+}
+
+.glavnaSlika {
+    height: 10em;
+    margin-top: -2.75em;
+}
+
+.uvodnoBesedilo {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    font-size: 1.25em;
+}
+
+.povezavaSplosno {
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+}
+
+.povezavaSplosnoSlika {
+    height: 2.5em;
+}
+
+.povezavaSplosnoSlikaGumb {
+    border: none;
+    text-decoration: none;
+    background-color: inherit;
+}
+
+.povezavaSplosnoSlikaGumb:focus {
+    outline: 0;
+}
+
+.vodoravnaPrva {
+    margin-top: 2.75em;
+    margin-bottom: 2.75em;
+}
+
+.seznamTeden {
+    margin-top: 1.75em;
+}
+
+.karticaTeden {
+    font-size: 1.5em;
+    align-items: center;
+    margin: 1.75em 0;
+}
+
+.karticaGumb {
+    border: none;
+    text-decoration: none;
+    background-color: initial;
+}
+
+.karticaGumb:focus {
+    outline: 0;
+}
+
+.karticaNaslov {
+    text-transform: uppercase;
+}
+
+.karticaNaslov svg {
+    margin-left: 0.5em;
+}
+
+.card p {
+    font-size: 1.1em;
+}
+
+.poglavje01 .card {
+    background-color:rgba(255, 245, 157, 0.9);
+}
+
+.poglavje02 .card {
+    background-color:rgba(255, 204, 128, 0.9);
+}
+
+.poglavje03 .card {
+    background-color:rgba(248, 187, 208, 0.9);
+}
+
+.poglavje04 .card {
+    background-color:rgba(206, 147, 216, 0.9);
+}
+
+.poglavje05 .card {
+    background-color:rgba(129, 212, 250, 0.9);
+}
+
+.poglavje06 .card {
+    background-color:rgba(197, 225, 165, 0.9);
+}
+
+.poglavjeVaje .card {
+    background-color:rgba(108, 203, 196, 0.9);
+}
+
+.poglavjeFinale .card {
+    background-color:rgba(239, 93, 90, 0.9);
+}
+
+.poglavjeRazno .card {
+    background-color:rgba(213, 219, 219, 0.9);
+}
+
+/* splosno.html */
+
+.splosnoUvodniTekst {
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.splosnoUvodniTekst ul{
+    list-style-position: inside;
+}
+
+.splosnoUvodniTekst h1 {
+    margin-top: 1.25em;
+    margin-bottom: 0.75em;
+}
+
+.splosnoKazaloBarv {
+    font-size: 1.25em;
+    text-align: center;
+    margin-top: 1.25em;
+    margin-bottom: 1em;
+}
+
+.splosnoBarva {
+    font-size: 1.25em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0.25em;
+}
+
+.splosnoGumbNavigacija {
+    border: none;
+    text-decoration: none;
+    background-color: inherit;
+    margin-bottom: 0.25em;
+}
+
+.splosnoGumbNavigacija:focus {
+    outline: 0;
+}
+
+.splosnoNavigacija {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+.seznamNaslov {
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.splosnoGumb {
+    border: none;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    background-color: inherit;
+    margin: 1em;
+}
+
+.splosnoGumb:focus {
+    outline: 0;
+}
+
+.splosnoHR {
+    margin-bottom: 2em;
+}
+
+.splosnoPodKazalom {
+    margin-top: 2.5em;
+}
+
+.poglavje01 .list-group-item {
+    background-color:rgba(255, 245, 157, 0.9);
+}
+
+.poglavje02 .list-group-item {
+    background-color:rgba(255, 204, 128, 0.9);
+}
+
+.poglavje03 .list-group-item {
+    background-color:rgba(248, 187, 208, 0.9);
+}
+
+.poglavje04 .list-group-item {
+    background-color:rgba(206, 147, 216, 0.9);
+}
+
+.poglavje05 .list-group-item {
+    background-color:rgba(129, 212, 250, 0.9);
+}
+
+.poglavje06 .list-group-item {
+    background-color:rgba(197, 225, 165, 0.9);
+}
+
+.poglavjeVaje .list-group-item {
+    background-color:rgba(108, 203, 196, 0.9);
+}
+
+.poglavjeFinale .list-group-item {
+    background-color:rgba(239, 93, 90, 0.9);
+}
+
+.poglavjeRazno .list-group-item {
+    background-color:rgba(213, 219, 219, 0.9);
+}
+
+.poglavje01 span {
+    background-color:rgba(255, 245, 157, 0.9);
+    border-radius: 0.25em;
+}
+
+.poglavje02 span {
+    background-color:rgba(255, 204, 128, 0.9);
+    border-radius: 0.25em;
+}
+
+.poglavje03 span {
+    background-color:rgba(248, 187, 208, 0.9);
+    border-radius: 0.25em;
+}
+
+.poglavje04 span {
+    background-color:rgba(206, 147, 216, 0.9);
+    border-radius: 0.25em;
+}
+
+.poglavje05 span {
+    background-color:rgba(129, 212, 250, 0.9);
+    border-radius: 0.25em;
+}
+
+.poglavje06 span {
+    background-color:rgba(197, 225, 165, 0.9);
+    border-radius: 0.25em;
+}
+
+.poglavjeVaje span {
+    background-color:rgba(108, 203, 196, 0.9);
+    border-radius: 0.25em;
+}
+
+.poglavjeFinale span {
+    background-color:rgba(239, 93, 90, 0.9);
+    border-radius: 0.25em;
+}
+
+.poglavjeRazno span {
+    background-color:rgba(213, 219, 219, 0.9);
+    border-radius: 0.25em;
+}
+
+#gumbSplosnoGor {
+    display: none;
+    position: fixed;
+    background-color: inherit;
+    text-decoration: none;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: fixed; 
+    bottom: 2em; 
+    left: 1.5em;
+}
+
+#gumbSplosnoGor:hover {
+    color: black;
+}
+
+#gumbSplosnoGor:focus {
+    outline: 0;
+}
+
+#gumbIndexGor {
+    display: none;
+    position: fixed;
+    background-color: inherit;
+    text-decoration: none;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: fixed; 
+    bottom: 2em; 
+    left: 1.5em;
+}
+
+#gumbIndexGor:focus {
+    outline: 0;
+}
+
+.konecStrani {
+    margin: 1.5em 0;
+}
+
+.poglavje01Barva {
+    color:rgba(255, 245, 157, 1);
+}
+
+.poglavje02Barva {
+    color:rgba(255, 204, 128, 1);
+}
+
+.poglavje03Barva {
+    color:rgba(248, 187, 208, 1);
+}
+
+.poglavje04Barva {
+    color:rgba(206, 147, 216, 1);
+}
+
+.poglavje05Barva {
+    color:rgba(129, 212, 250, 1);
+}
+
+.poglavje06Barva {
+    color:rgba(197, 225, 165, 1);
+}
+
+.poglavjeVajeBarva {
+    color:rgba(108, 203, 196, 1);
+}
+
+.poglavjeFinaleBarva {
+    color:rgba(239, 93, 90, 1);
+}
+
+.poglavjeRaznoBarva {
+    color:rgba(213, 219, 219, 1);
+}
+
+.prenosiText {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: inherit;
+    margin: 1em;
+    text-justify: distribute;
+    font-size: 1.2em;
+}

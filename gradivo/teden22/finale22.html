@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./../../knjiznice/css/stili.css">
+        <link rel="stylesheet" type="text/css" href="./../../knjiznice/css/stiliGradivo.css">
+
+        <link rel="shortcut icon" href="./../../java.ico" type="image/x-icon">
+
+        <title>Finale</title>
+
+    </head>
+
+    <!--
+    <body style="background-image: url(./../../slike/404.png); background-repeat: repeat; background-attachment: fixed; background-position: center; background-size: 25%;"></body>
+    -->
+
+
+    <body>
+
+        <div class="container text-center gradivoVsebina" style="display: ;">
+
+            <div class="row text-center">
+
+                <div class="col-1"><button class="gradivoGumbDomov" onclick="location.href='./../../index.html'" type="button"><svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                  </svg></button></div>
+
+                <div class="col-11 poglavjeFinale"><h1 class="gradivoNaslov">Zaključek: <span>FINALE</span></h1></div>
+
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row text-center">
+                <div class="col-1"></div>
+                <div class="col-10">
+                     
+                    <span class="gradivoTekstVecje">1. Naloga: </span>
+                    <span class="gradivoTekst"> Vesoljček Ford Prefect se v šolo vozi z vesoljskim plovilom FH-12B, ki ga Zemljani poznajo tudi pod imenom avtobus. Omenjen avtobus vozi v enakomernih časovnih intervalih.
+                        Napišite <b>program</b> v programskem jeziku java, ki prebere čas začetka dnevne vožnje (h<sub>z</sub> (ura) in m<sub>z</sub> (minuta)), čas konca dnevne vožnje (h<sub>k</sub> in m<sub>k</sub>) in interval v minutah (d), nato pa izpiše dnevni vozni red. Prva vožnja se izvrši natanko ob času začetka vožnje, zadnja pa ob času, ki je kvečjemu enak času konca vožnje.
+                        <br>Na vhodu je zapisanih pet celih števil, ločenih s presledkom: h<sub>z</sub> &#8712; [0, 23], m<sub>z</sub> &#8712; [0, 59],<br>
+                        h<sub>k</sub> &#8712; [h<sub>z</sub>, 23], m<sub>k</sub> &#8712; [0, 59] in d &#8712; [1, 1440]. V primeru h<sub>z</sub> = h<sub>k</sub> velja m<sub>z</sub> <= m<sub>k</sub>.
+                        <br>Program izpiše odhode avtobusa v naraščajočem vrstnem redu. Vsak odhod naj izpiše v svoji vrstici. Posamezni odhodi naj bodo zapisani v obliki "HH:MM" (npr. 09:05 za    pet čez deveto).</span>
+                    <br><span class="gradivoMinimalno">Primer 1: program prebere števila 10 0 15 0 30 in izpiše:<br>
+                        10:00<br>
+                        10:30<br>
+                        11:00<br>
+                        11:30<br>
+                        12:00<br>
+                        12:30<br>
+                        13:00<br>
+                        13:30<br>
+                        14:00<br>
+                        14:30<br>
+                        15:00<br>
+                        </span>
+                    <br><span class="gradivoMinimalno">Primer 2: program prebere števila 8 50 14 10 35 in izpiše:<br>
+                        08:50<br>
+                        09:25<br>
+                        10:00<br>
+                        10:35<br>
+                        11:10<br>
+                        11:45<br>
+                        12:20<br>
+                        12:55<br>
+                        13:30<br>
+                        14:05<br>
+                        </span>
+                    <br><span class="gradivoMinimalno">Primer 3: program prebere števila 0 0 23 59 1439 in izpiše:<br>
+                        00:00<br>
+                        23:59<br>
+                        </span>
+                    <br><span class="gradivoMinimalno">Primer 4: program prebere števila 4 43 23 15 26 in izpiše:<br>
+                        04:43<br>
+                        05:09<br>
+                        05:35<br>
+                        06:01<br>
+                        06:27<br>
+                        06:53<br>
+                        07:19<br>
+                        07:45<br>
+                        08:11<br>
+                        08:37<br>
+                        09:03<br>
+                        09:29<br>
+                        09:55<br>
+                        10:21<br>
+                        10:47<br>
+                        11:13<br>
+                        11:39<br>
+                        12:05<br>
+                        12:31<br>
+                        12:57<br>
+                        13:23<br>
+                        13:49<br>
+                        14:15<br>
+                        14:41<br>
+                        15:07<br>
+                        15:33<br>
+                        15:59<br>
+                        16:25<br>
+                        16:51<br>
+                        17:17<br>
+                        17:43<br>
+                        18:09<br>
+                        18:35<br>
+                        19:01<br>
+                        19:27<br>
+                        19:53<br>
+                        20:19<br>
+                        20:45<br>
+                        21:11<br>
+                        21:37<br>
+                        22:03<br>
+                        22:29<br>
+                        22:55<br>
+                        </span>
+                    <br><span class="gradivoMinimalno">Primer 5: program prebere števila 7 50 22 14 144 in izpiše:<br>
+                        07:50<br>
+                        10:14<br>
+                        12:38<br>
+                        15:02<br>
+                        17:26<br>
+                        19:50<br>
+                        22:14<br>
+                        </span>
+
+                </div>
+                <div class="col-1"></div>    
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row text-center">
+                <div class="col-1"></div>
+                <div class="col-10">
+                     
+                    <span class="gradivoTekstVecje">2. Naloga: </span>
+                    <span class="gradivoTekst">
+                        Ivan Cankar se je odločil, da bo svoj umetniški talent preizkusil v programiranju. Za problem, si je določil, da mora neko število razcepiti s števkami nekega drugega števila. Ivan je kar hitro opazil, da mu programiranje ravno ne gre od rok. Kot velik oboževalec njegovih del in pravi programerski goru, smo se odločili, da mu bomo pomagali. Napišite <b>program</b> v programskem jeziku java, ki prebere števili n in m in po vrsti izpiše posamezne dele (zaporedja števk) števila n, pri čemer je dolžina posameznega dela določena s pripadajočo števko v številu m. Dolžina prvega dela je tako enaka prvi števki števila m, dolžina drugega dela je enaka drugi števki števila m itd.
+                        Nalogo rešite zgolj z operacijami nad celimi števili. Uporaba realnoštevilskih operacij ter nizov, tabel ipd. ni dovoljena.<br>
+                        Na vhodu sta podani celi števili n &#8712; [1, 10<sup>18</sup>] in m &#8712; [1, 10<sup>18</sup>], ločeni s presledkom. Vsota števk števila m je enaka številu števk števila n. Števili n in m ne vsebujeta nobene ničle.<br>
+                        Izpišite toliko vrstic, kolikor je števk števila m. V prvi vrstici izpišite začetnih a<sub>1</sub> števk števila n (pri čemer je a<sub>1</sub> prva števka števila m), v drugi sledečih a<sub>2</sub> števk števila n (pri čemer je a<sub>2</sub> druga števka števila m) itd.
+                    </span>
+                    <br><span class="gradivoMinimalno">Primer 1: program prebere števili 3629831574865 2317 in izpiše:<br>
+                        36<br>
+                        298<br>
+                        3<br>
+                        1574865<br>
+                    </span>
+
+                    <br><span class="gradivoMinimalno">Primer 2: program prebere števili 123456789987654321 72315 in izpiše:<br>
+                        1234567<br>
+                        89<br>
+                        987<br>
+                        6<br>
+                        54321<br>
+                    </span>
+
+                    <br><span class="gradivoMinimalno">Primer 3: program prebere števili 6 1 in izpiše:<br>
+                        6<br>
+                    </span>
+
+                    <br><span class="gradivoMinimalno">Primer 4: program prebere števili 411511611711811911 3456 in izpiše:<br>
+                        411<br>
+                        5116<br>
+                        11711<br>
+                        811911<br>
+                    </span>
+
+                    <br><span class="gradivoMinimalno">Primer 5: program prebere števili 75294862193636 2147 in izpiše:<br>
+                        75<br>
+                        2<br>
+                        9486<br>
+                        2193636<br>
+                    </span>
+
+                </div>
+                <div class="col-1"></div>    
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row text-center">
+                <div class="col-1"></div>
+                <div class="col-10">
+                     
+                    <span class="gradivoTekstVecje">3. Naloga: </span>
+                    <span class="gradivoTekst">Mama nas prosi, da pospravimo podstrešje. Ker na podstrešje živa duša ni vstopila že vrsto let, je ta prostor zelo prašen in razmetan. Na podstrešju se nahaja ogromno škatel. Škatle, označene z zaporednimi številkami, po vrsti zložimo v kupe. Prvi kup vsebuje prvih a škatel, vsak naslednji pa b škatel več kot prejšnji kup. Na primer, če je a = 3 in b = 2, potem prvi kup vsebuje tri škatle (njihove številke so 1 – 3), drugi pet škatel (številke 4 – 8), tretji sedem škatel (9 – 15), <br>četrti devet škatel (16 – 24) itd.
+                        <br>Napišite <b>program</b> v programskem jeziku java, ki bo prebral cela števila a &#8712; [1, 10<sup>3</sup>], b &#8712; [0, 10<sup>3</sup>] in k &#8712; [1, 10<sup>6</sup>] (ločena so s presledkom) in izpisal zaporedno številko kupa, v katerem se nahaja škatla s številko k.
+                    </span>
+                    <br><span class="gradivoMinimalno">Primer 1: program prebere števila 1 0 15 in izpiše 15</span><br>
+                    <br><span class="gradivoMinimalno">Primer 2: program prebere števila 6 0 20 in izpiše 4</span><br>
+                    <br><span class="gradivoMinimalno">Primer 3: program prebere števila 345 0 249436 in izpiše 724</span><br>
+                    <br><span class="gradivoMinimalno">Primer 4: program prebere števila 3 2 23 in izpiše 4</span><br>
+                    <br><span class="gradivoMinimalno">Primer 5: program prebere števila 11 29 6 in izpiše 1</span><br>
+
+                </div>
+                <div class="col-1"></div>    
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row text-center">
+                <div class="col-1"></div>
+                <div class="col-10">
+                     
+                    <span class="gradivoTekstVecje">4. Naloga: </span>
+                    <span class="gradivoTekst">Vlada se je odločila, da bo znova uvedla obvezen vojaški rok. Mladostniki, ki dandanes ne vedo ničesar o vojski, se udeležijo prvega obveznega srečanja, kjer že pridobijo naziv vojaka. Vojaki bi se na poziv »V vrsto zbor!« morali razvrstiti po višini od najmanjšega do največjega, a tega ne znajo najbolje. Desetarja zanima, kdo je vsaj lokalno postavljen pravilno. Ostale vojake bo namreč kaznoval z dodatnimi sklecami. Vojak je postavljen lokalno pravilno, če je njegov levi sosed (če obstaja) nižji ali enako visok, desni sosed (če obstaja) pa višji ali enako visok kot on.<br>
+                        Napišite <b>program</b> v programskem jeziku java, ki prebere zaporedje višin vojakov v »vrsti zbor« in izpiše indekse vseh vojakov, ki so postavljeni lokalno pravilno. Če to ne velja za nikogar, naj program izpiše "NOBEDEN".
+                        <br>V prvi vrstici vhoda je podano celo število n &#8712; [2, 100], v drugi pa n celih števil v intervalu [1, 10<sup>9</sup>], ki predstavljajo višine vojakov v »vrsti zbor«. Števila v drugi vrstici so med seboj ločena s po enim presledkom.<br>Program naj izpiše iskane indekse po vrsti od najmanjšega do največjega (vsak indeks naj izpiše v svoji vrstici) oziroma samo besedo "NOBEDEN".
+                    <br></span>
+                    <span class="gradivoMinimalno">Primer 1: program prebere število 10 ter sledeče zaporedje števil:<br>
+                        185 172 180 181 190 183 178 185 191 207 in izpiše:<br>
+                        2<br>
+                        3<br>
+                        7<br>
+                        8<br>
+                        9<br>
+                    </span>
+
+                    <br></span>
+                    <span class="gradivoMinimalno">Primer 2: program prebere število 6 ter sledeče zaporedje števil:<br>
+                        175 169 183 176 200 180 in izpiše:<br>
+                        NOBEDEN
+                    </span>
+
+                    <br></span>
+                    <span class="gradivoMinimalno">Primer 3: program prebere število 2 ter sledeče zaporedje števil:<br>
+                        170 170 in izpiše:<br>
+                        0<br>
+                        1<br>
+                    </span>
+
+                    <br></span>
+                    <span class="gradivoMinimalno">Primer 4: program prebere število 20 ter sledeče zaporedje števil:<br>
+                        170 165 210 194 185 165 160 176 190 195 204 208 194 164 194 179 189 196 188 202 in izpiše:<br>
+                        7<br>
+                        8<br>
+                        9<br>
+                        10<br>
+                        16<br>
+                        19<br>
+                    </span>
+
+                    <br></span>
+                    <span class="gradivoMinimalno">Primer 5: program prebere število 70 ter sledeče zaporedje števil:<br>
+                        191 216 172 185 193 188 179 189 170 203 184 185 170 211 204 188 205 194 169 211 174 182 181 193 185 163 183 201 166 198 165 178 195 196 187 187 211 194 179 185 166 178 201 216 164 200 197 194 199 180 169 190 173 191 196 193 180 191 187 188 177 166 160 216 181 204 182 211 160 199 in izpiše:<br>
+                        0<br>
+                        3<br>
+                        26<br>
+                        31<br>
+                        32<br>
+                        35<br>
+                        41<br>
+                        42<br>
+                        53<br>
+                        69<br>
+                    </span>
+                    
+                        
+
+                </div>
+                <div class="col-1"></div>    
+            </div>
+
+            <div class="row">
+                <div class="col-12 konecStrani"></div>
+            </div>            
+            <!-- AVTORSKE PRAVICE, TO JE ŠALA (HEC) -->
+            <div class="mokot">
+                &#169; mokot
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="./knjiznice/js/kodaIndex.js"></script>
+
+    </body>
+
+</html>

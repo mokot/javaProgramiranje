@@ -1,0 +1,138 @@
+.gradivoVsebina {
+    margin-top: 3em;
+}
+
+.gradivoNaslov {
+    text-transform: capitalize;
+}
+
+.gradivoGumbDomov {
+    border: none;
+    text-decoration: none;
+    background-color: inherit;
+}
+
+.gradivoGumbDomov:focus {
+    outline: 0;
+}
+
+.gradivoUvodnoBesedilo {
+    font-size: 1.75em;
+}
+
+.gradivoTekst {
+    font-size: 1.15em;
+}
+
+.gradivoTekstVecje {
+    font-size: 1.25em;
+}
+
+.gradivoMinimalno {
+    color: gray;
+    font-style: italic;
+    font-size: 1em;
+}
+
+.gradivoVodoravno {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.gradivoPoljePrimer01 {
+    background-color:rgba(255, 245, 157, 0.75);
+    border-radius: 0.35em;
+    border: 2px solid rgba(158,158,158, 0.75);
+}
+
+.gradivoPoljePrimer01 .row {
+    margin: 0.75em 0;
+    border-bottom: 1px solid  rgba(158,158,158, 0.75);
+}
+
+.gradivoNapaka01 {
+    color: red;
+}   
+
+.diagramPoteka {
+    background-color:rgba(242,242,242, 0.5);
+    padding: 2em;
+    border: 1px solid rgb(173, 173, 173);
+    border-radius: 0.5em;
+}
+
+.tezjaNaloga {
+    color: rgb(235, 60, 60);
+    font-weight: bolder;
+}
+
+/* Polje code */
+
+/** 
+ * BARVE:
+ * Rezervirane besede: #1565c0 (temno modra)
+ * Tipi: #00acc1 (turkizno modra)
+ * Stringi: #4caf50 (zelena)
+ * Spremenljivke: #e91e63 (temno rdeca)
+ * Metode: #8e24aa (vijolicna)
+ * Komentarji: #909497 (siva)
+ */
+
+code {
+    color: rgb(53, 53, 53);    
+}
+
+.kodaTekst {
+    text-align: left;
+}
+
+.kodaOzadje {
+    background-color:rgba(242,242,242, 0.5);
+    padding: 1.25em;
+    border: 1px solid rgb(173, 173, 173);
+    border-radius: 0.5em;
+}
+
+.rezerviranaBeseda {
+color: #1565c0 ;
+}
+
+.tip {
+   color: #00acc1;
+}
+
+.string {
+    color: #4caf50;
+}
+
+.spremenljivka {
+    color: #e91e63;
+}
+
+.metoda {
+    color:  #8e24aa;
+}
+
+.komentar {
+    color: #909497;
+}
+
+.prviTab {
+    padding-left: 2em;
+}
+
+.drugiTab {
+    padding-left: 4em;
+}
+
+.tretjiTab {
+    padding-left: 6em;
+}
+
+.cetrtiTab {
+    padding-left: 8em;
+}
+
+.petiTab {
+    padding-left: 10em;
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./../../knjiznice/css/stili.css">
+        <link rel="stylesheet" type="text/css" href="./../../knjiznice/css/stiliGradivo.css">
+
+        <link rel="shortcut icon" href="./../../java.ico" type="image/x-icon">
+
+        <title>Vaje: For, while, do-while</title>
+
+    </head>
+
+    <body>
+
+        <div class="container text-center gradivoVsebina">
+
+            <div class="row text-center">
+
+                <div class="col-1"><button class="gradivoGumbDomov" onclick="location.href='./../../index.html'" type="button"><svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                  </svg></button></div>
+
+                <div class="col-11 poglavje04"><h1 class="gradivoNaslov">vaje: <span>FOR, WHILE, DO-WHILE</span></h1></div>
+
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <p class="gradivoUvodnoBesedilo">Stavek for, while, do-while</p>
+                    <p class="gradivoTekst">Zapisali bomo program v programskem jeziku java, ki prikazuje uporabo zank.</p>
+
+                </div>
+                <div class="col-2"></div>
+
+                <div class="col-8">
+                    <code><p class="gradivoTekst kodaTekst kodaOzadje">
+                        <span class="rezerviranaBeseda">public class</span> <span class="tip">ForWhileDoWile </span>{<br>
+                            <span class="prviTab rezerviranaBeseda">public static </span><span class="tip">void</span> <span class="metoda">main</span>(<span class="">String</span>[] <span class="spremenljivka">args</span>) {<br><br>
+
+                                <span class="drugiTab rezerviranaBeseda">for </span>(<span class="tip">int</span> <span class="spremenljivka">stevecFor</span> = 1; stevecFor <= 10; stevecFor++) {<br>
+                                    <span class="tretjiTab">System.out.</span><span class="metoda">println</span>(<span class="string">"VrsticaFor "</span> + stevecFor);<br>
+                                <span class="drugiTab">}</span><br><br>
+
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>();<br><br>
+
+                                <span class="drugiTab tip">int </span><span class="spremenljivka">stevecWhile</span> = 1;<br>
+                                <span class="drugiTab rezerviranaBeseda">while </span>(stevecWhile <= 10) {<br>
+                                    <span class="tretjiTab">System.out.</span><span class="metoda">println</span>(<span class="string">"VrsticaWhile "</span> + stevecWhile);<br>
+                                    <span class="tretjiTab">stevecWhile++;</span><br>
+                                <span class="drugiTab">}</span><br><br>
+
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>();<br><br>
+
+                                <span class="drugiTab tip">int </span><span class="spremenljivka">stevecDoWhile</span> = 1;<br>
+                                <span class="drugiTab rezerviranaBeseda">do </span>{<br>
+                                    <span class="tretjiTab">System.out.</span><span class="metoda">println</span>(<span class="string">"VrsticaDoWhile "</span> + stevecDoWhile);<br>
+                                    <span class="tretjiTab">stevecDoWhile++;</span><br>
+                                <span class="drugiTab">} </span><span class="rezerviranaBeseda">while </span>(stevecDoWhile <= 10);<br>
+                                    
+                            <span class="prviTab ">}<br>
+                        <span class=" ">}
+                    </p></code>
+                </div>
+
+                <div class="col-2"></div>
+
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <p class="gradivoTekst">
+                        Program nam izpiše:
+                    </p>
+                </div>
+                <div class="col-1"></div>
+
+                <div class="col-2"></div>
+
+                <div class="col-8">
+                    <code><p class="gradivoTekst kodaTekst kodaOzadje">
+                        VrsticaFor 1<br>
+                        VrsticaFor 2<br>
+                        VrsticaFor 3<br>
+                        VrsticaFor 4<br>
+                        VrsticaFor 5<br>
+                        VrsticaFor 6<br>
+                        VrsticaFor 7<br>
+                        VrsticaFor 8<br>
+                        VrsticaFor 9<br>
+                        VrsticaFor 10<br><br>
+
+                        VrsticaWhile 1<br>
+                        VrsticaWhile 2<br>
+                        VrsticaWhile 3<br>
+                        VrsticaWhile 4<br>
+                        VrsticaWhile 5<br>
+                        VrsticaWhile 6<br>
+                        VrsticaWhile 7<br>
+                        VrsticaWhile 8<br>
+                        VrsticaWhile 9<br>
+                        VrsticaWhile 10<br><br>
+
+                        VrsticaDoWhile 1<br>
+                        VrsticaDoWhile 2<br>
+                        VrsticaDoWhile 3<br>
+                        VrsticaDoWhile 4<br>
+                        VrsticaDoWhile 5<br>
+                        VrsticaDoWhile 6<br>
+                        VrsticaDoWhile 7<br>
+                        VrsticaDoWhile 8<br>
+                        VrsticaDoWhile 9<br>
+                        VrsticaDoWhile 10
+                    </p></code>
+                </div>
+
+                <div class="col-2"></div>
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row text-center">
+                <div class="col-1"></div>
+                <div class="col-10">
+                     
+                    <span class="gradivoTekstVecje">1. Naloga: </span>
+                    <span class="gradivoTekst">Napišite <b>program</b> v programskem jeziku java, ki 100x izpiše "Programiranje je zabavno".</span>
+
+                </div>
+                <div class="col-1"></div>    
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row text-center">
+                <div class="col-1"></div>
+                <div class="col-10">
+                     
+                    <span class="gradivoTekstVecje">2. Naloga: </span>
+                    <span class="gradivoTekst">Napišite <b>program</b> v programskem jeziku java, ki prebere dve celi števili a, b in izpiše zaporedje števil od vključno a do vključno b.</span>
+                    <br><span class="gradivoMinimalno">Primer: program prebere števili 5, 9 in izpiše "5 6 7 8 9"</span>
+
+                </div>
+                <div class="col-1"></div>    
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row text-center">
+                <div class="col-1"></div>
+                <div class="col-10">
+                     
+                    <span class="gradivoTekstVecje">3. Naloga: </span>
+                    <span class="gradivoTekst">Napišite <b>program</b> v programskem jeziku java, ki sešteva števila dokler je vsota manjša od 42.</span>
+                    <br><span class="gradivoMinimalno">Primer: program prebere števila 18, 7, 15, 22 in sproti izpisuje "18, 25, 40, 52"</span>
+
+                </div>
+                <div class="col-1"></div>    
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row text-center">
+                <div class="col-1"></div>
+                <div class="col-10">
+                     
+                    <span class="gradivoTekstVecje">4. Naloga: </span>
+                    <span class="gradivoTekst">Napišite <b>program</b> v programskem jeziku java, ki prebere 5 celih števil in sproti izpisuje vsoto.</span>
+                    <br><span class="gradivoMinimalno">Primer: program prebere števila 15, 42, 39, 81, 32 in sproti izpisuje "15, 57, 96, 177, 209"</span>
+
+                </div>
+                <div class="col-1"></div>    
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row text-center">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <span class="gradivoTekstVecje">5. Naloga: </span>
+                    <span class="gradivoTekst">Napišite <b>program</b> v programskem jeziku java, ki nadleguje uporabnika dokler ne vnese števila 42.</span>
+                    <br><span class="gradivoMinimalno">Primer: program prebere števila -15, 72, 39, 81, 32, 42 in izpiše "Odgovor na vprašanje o vesolju, življenju in sploh vsem."</span>
+
+                </div>
+                <div class="col-1"></div>    
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row text-center">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <span class="tezjaNaloga">*</span>
+                    <span class="gradivoTekstVecje">6. Naloga: </span>
+                    <span class="gradivoTekst">Napišite <b>program</b> v programskem jeziku java, ki prebere celo število vseh tekmovalcev in nato prebere še dosežen rezultat vsakega tekmovalca. Program naj izpiše zaporedno vnešeno mesto najboljšega tekmovalca in njegov rezultat. </span>
+                    <br><span class="gradivoMinimalno">Primer: program prebere števila 5, 635, 680, 671, 695, 667 in izpiše "Najboljši je 4. atlet (695)"</span>
+
+                </div>
+                <div class="col-1"></div>    
+            </div>
+
+            <div class="row">
+                <div class="col-12 konecStrani"></div>
+            </div>
+
+            <!-- AVTORSKE PRAVICE, TO JE ŠALA (HEC) -->
+            <div class="mokot">
+                &#169; mokot
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="./knjiznice/js/kodaIndex.js"></script>
+
+    </body>
+
+</html>

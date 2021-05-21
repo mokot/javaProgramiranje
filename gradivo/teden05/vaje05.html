@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./../../knjiznice/css/stili.css">
+        <link rel="stylesheet" type="text/css" href="./../../knjiznice/css/stiliGradivo.css">
+
+        <link rel="shortcut icon" href="./../../java.ico" type="image/x-icon">
+
+        <title>Vaje: Operatorji_1</title>
+
+    </head>
+
+    <body>
+
+        <div class="container text-center gradivoVsebina">
+
+            <div class="row text-center">
+
+                <div class="col-1"><button class="gradivoGumbDomov" onclick="location.href='./../../index.html'" type="button"><svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                  </svg></button></div>
+
+                <div class="col-11 poglavje02"><h1 class="gradivoNaslov">vaje: <span>OPERATORJI_1</span></h1></div>
+
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <p class="gradivoUvodnoBesedilo">Določitev vrednosti</p>
+                    <p class="gradivoTekst">Zapisali bomo program v programskem jeziku java, ki določi vrednosti spremenljivkam.</p>
+
+                </div>
+                <div class="col-2"></div>
+
+                <div class="col-8">
+                    <code><p class="gradivoTekst kodaTekst kodaOzadje">
+                        <span class="rezerviranaBeseda">public class</span> <span class="tip">DolocitevVrednosti </span>{<br>
+                            <span class="prviTab rezerviranaBeseda">public static </span><span class="tip">void</span> <span class="metoda">main</span>(<span class="">String</span>[] <span class="spremenljivka">args</span>) {<br><br>
+
+                                <span class="tip drugiTab">int</span><span class="spremenljivka"> stevilo1</span>,<span class="spremenljivka"> stevilo2</span>,<span class="spremenljivka"> stevilo3</span>;<br>
+                                <span class="drugiTab">stevilo1 = 42;<span><br><br>
+
+                                <span class="drugiTab">stevilo2 = stevilo1;</span><br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(<span class="string">"stevilo1: "</span> + stevilo1);<br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(<span class="string">"stevilo2: "</span> + stevilo2);<br><br>
+
+                                <span class="drugiTab">stevilo3 = stevilo2;</span><br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(<span class="string">"stevilo2: "</span> + stevilo2);<br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(<span class="string">"stevilo3: "</span> + stevilo3);<br>
+                            <span class="prviTab ">}<br>
+                        <span class=" ">}
+                    </p></code>
+                </div>
+
+                <div class="col-2"></div>
+
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <p class="gradivoTekst">
+                        Program nam izpiše:
+                    </p>
+                </div>
+                <div class="col-1"></div>
+
+                <div class="col-2"></div>
+
+                <div class="col-8">
+                    <code><p class="gradivoTekst kodaTekst kodaOzadje">
+                        stevilo1: 42<br>stevilo2: 42<br>stevilo2: 42<br>stevilo3: 42
+                    </p></code>
+                </div>
+
+                <div class="col-2"></div>
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <p class="gradivoUvodnoBesedilo">Aritmetični operatorji</p>
+                    <p class="gradivoTekst">Zapisali bomo program v programskem jeziku java, ki prikazuje uporabo aritmetičnih operatorjev.</p>
+
+                </div>
+                <div class="col-2"></div>
+
+                <div class="col-8">
+                    <code><p class="gradivoTekst kodaTekst kodaOzadje">
+                        <span class="rezerviranaBeseda">public class</span> <span class="tip">AritmeticniOperatorji </span>{<br>
+                            <span class="prviTab rezerviranaBeseda">public static </span><span class="tip">void</span> <span class="metoda">main</span>(<span class="">String</span>[] <span class="spremenljivka">args</span>) {<br><br>
+
+                                <span class="tip drugiTab">double</span><span class="spremenljivka"> stevilo1</span> = 12.4,<span class="spremenljivka"> stevilo2</span> = 3.6,<span class="spremenljivka"> rezultat</span>;<br><br>
+
+                                
+                                <span class="drugiTab">rezultat = stevilo1 + stevilo2;</span><br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(<span class="string">"stevilo1 + stevilo2 = "</span> + rezultat);<br><br>
+
+                                <span class="drugiTab">rezultat = stevilo1 - stevilo2;</span><br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(<span class="string">"stevilo1 - stevilo2 = "</span> + rezultat);<br><br>
+
+                                <span class="drugiTab">rezultat = stevilo1 * stevilo2;</span><br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(<span class="string">"stevilo1 * stevilo2 = "</span> + rezultat);<br><br>
+
+                                <span class="drugiTab">rezultat = stevilo1 / stevilo2;</span><br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(<span class="string">"stevilo1 / stevilo2 = "</span> + rezultat);<br><br>
+
+                                <span class="drugiTab">rezultat = stevilo1 % stevilo2;</span><br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(<span class="string">"stevilo1 % stevilo2 = "</span> + rezultat);<br><br>
+
+                                <span class="drugiTab tip">String </span><span class="spremenljivka">beseda1 </span>= <span class="string">"Programiranje "</span>; <br>
+                                <span class="drugiTab tip">String </span><span class="spremenljivka">beseda2 </span>= <span class="string">"je "</span>; <br>
+                                <span class="drugiTab tip">String </span><span class="spremenljivka">beseda3 </span>= <span class="string">"zabavno!"</span>; <br>
+                                <span class="drugiTab tip">String </span><span class="spremenljivka">rezultatNiz</span> = beseda1 + beseda2 + beseda3;<br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(rezultatNiz);<br>
+
+                            <span class="prviTab ">}<br>
+                        <span class=" ">}
+                    </p></code>
+                </div>
+
+                <div class="col-2"></div>
+
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <p class="gradivoTekst">
+                        Program nam izpiše:
+                    </p>
+                </div>
+                <div class="col-1"></div>
+
+                <div class="col-2"></div>
+
+                <div class="col-8">
+                    <code><p class="gradivoTekst kodaTekst kodaOzadje">
+                        stevilo1 + stevilo2 = 16.9<br>
+                        stevilo1 - stevilo2 = 8.8<br>
+                        stevilo1 * stevilo2 = 44.64<br>
+                        stevilo1 / stevilo2 = 3.4444444444444446<br>
+                        stevilo1 % stevilo2 = 1.6<br>
+                        Programiranje je zabavno!
+                    </p></code>
+                </div>
+
+                <div class="col-2"></div>
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <p class="gradivoUvodnoBesedilo">Enojni operatorji</p>
+                    <p class="gradivoTekst">Zapisali bomo program v programskem jeziku java, ki prikazuje uporabo enojnih operatorjev.</p>
+
+                </div>
+                <div class="col-2"></div>
+
+                <div class="col-8">
+                    <code><p class="gradivoTekst kodaTekst kodaOzadje">
+                        <span class="rezerviranaBeseda">public class</span> <span class="tip">EnojniOperatorji </span>{<br>
+                            <span class="prviTab rezerviranaBeseda">public static </span><span class="tip">void</span> <span class="metoda">main</span>(<span class="">String</span>[] <span class="spremenljivka">args</span>) {<br><br>
+
+                                <span class="tip drugiTab">int</span><span class="spremenljivka"> stevilo</span> = 42;<br><br>
+
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(<span class="string">"+stevilo = "</span> + +stevilo);<br><br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(<span class="string">"-stevilo = "</span> + -stevilo);<br><br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(<span class="string">"++stevilo = "</span> + ++stevilo);<br><br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(<span class="string">"--stevilo = "</span> + --stevilo);<br>
+
+                            <span class="prviTab ">}<br>
+                        <span class=" ">}
+                    </p></code>
+                </div>
+
+                <div class="col-2"></div>
+
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <p class="gradivoTekst">
+                        Program nam izpiše:
+                    </p>
+                </div>
+                <div class="col-1"></div>
+
+                <div class="col-2"></div>
+
+                <div class="col-8">
+                    <code><p class="gradivoTekst kodaTekst kodaOzadje">
+                        +stevilo = 42<br>
+                        -stevilo = -42<br>
+                        ++stevilo = 43<br>
+                        --stevilo = 42
+                    </p></code>
+                </div>
+
+                <div class="col-2"></div>
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <p class="gradivoUvodnoBesedilo">Primerjalni operatorji</p>
+                    <p class="gradivoTekst">Zapisali bomo program v programskem jeziku java, ki prikazuje uporabo primerjalnih operatorjev.</p>
+
+                </div>
+                <div class="col-2"></div>
+
+                <div class="col-8">
+                    <code><p class="gradivoTekst kodaTekst kodaOzadje">
+                        <span class="rezerviranaBeseda">public class</span> <span class="tip">PrimerjalniOperatorji </span>{<br>
+                            <span class="prviTab rezerviranaBeseda">public static </span><span class="tip">void</span> <span class="metoda">main</span>(<span class="">String</span>[] <span class="spremenljivka">args</span>) {<br><br>
+
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(19 &#62; 5);<br><br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(2 &#62;= 2);<br><br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(32 &#60; 10);<br><br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(81 &#60;= 82);<br><br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(4 == 7);<br><br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(9 != 5);<br>
+
+                            <span class="prviTab ">}<br>
+                        <span class=" ">}
+                    </p></code>
+                </div>
+
+                <div class="col-2"></div>
+
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <p class="gradivoTekst">
+                        Program nam izpiše:
+                    </p>
+                </div>
+                <div class="col-1"></div>
+
+                <div class="col-2"></div>
+
+                <div class="col-8">
+                    <code><p class="gradivoTekst kodaTekst kodaOzadje">
+                        true<br>
+                        true<br>
+                        false<br>
+                        true<br>
+                        false<br>
+                        true
+                    </p></code>
+                </div>
+
+                <div class="col-2"></div>
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <p class="gradivoUvodnoBesedilo">Logični operatorji</p>
+                    <p class="gradivoTekst">Zapisali bomo program v programskem jeziku java, ki prikazuje uporabo logičnih operatorjev.</p>
+
+                </div>
+                <div class="col-2"></div>
+
+                <div class="col-8">
+                    <code><p class="gradivoTekst kodaTekst kodaOzadje">
+                        <span class="rezerviranaBeseda">public class</span> <span class="tip">LogicniOperatorji </span>{<br>
+                            <span class="prviTab rezerviranaBeseda">public static </span><span class="tip">void</span> <span class="metoda">main</span>(<span class="">String</span>[] <span class="spremenljivka">args</span>) {<br><br>
+
+                                <span class="drugiTab tip">int </span><span class="spremenljivka">stevilo1 </span>= 1, <span class="spremenljivka">stevilo2 </span>= 2, <span class="spremenljivka">stevilo3 </span>= 9;<br>
+                                <span class="drugiTab tip">boolean </span>rezultat; <br><br>
+
+                                <span class="drugiTab">rezultat = (stevilo1 &#62; stevilo2) && (stevilo3 &#62; stevilo1);</span>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(rezultat);<br><br>
+
+                                <span class="drugiTab">rezultat = (stevilo1 &#62; stevilo2) || (stevilo3 &#62; stevilo1);</span>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(rezultat);<br><br>
+
+                                <span class="drugiTab">rezultat = !rezultat;</span><br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(rezultat);<br>
+
+                            <span class="prviTab ">}<br>
+                        <span class=" ">}
+                    </p></code>
+                </div>
+
+                <div class="col-2"></div>
+
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <p class="gradivoTekst">
+                        Program nam izpiše:
+                    </p>
+                </div>
+                <div class="col-1"></div>
+
+                <div class="col-2"></div>
+
+                <div class="col-8">
+                    <code><p class="gradivoTekst kodaTekst kodaOzadje">
+                        false<br>
+                        true<br>
+                        false
+                    </p></code>
+                </div>
+
+                <div class="col-2"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 konecStrani"></div>
+            </div>
+
+            <!-- AVTORSKE PRAVICE, TO JE ŠALA (HEC) -->
+            <div class="mokot">
+                &#169; mokot
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="./knjiznice/js/kodaIndex.js"></script>
+
+    </body>
+
+</html>

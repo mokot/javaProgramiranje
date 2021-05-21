@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./../../knjiznice/css/stili.css">
+        <link rel="stylesheet" type="text/css" href="./../../knjiznice/css/stiliGradivo.css">
+
+        <link rel="shortcut icon" href="./../../java.ico" type="image/x-icon">
+
+        <title>Vaje: Uvod</title>
+
+    </head>
+
+    <body>
+
+        <div class="container text-center gradivoVsebina">
+
+            <div class="row text-center">
+
+                <div class="col-1"><button class="gradivoGumbDomov" onclick="location.href='./../../index.html'" type="button"><svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                  </svg></button></div>
+
+                <div class="col-11 poglavje01"><h1 class="gradivoNaslov">vaje: <span>UVOD</span></h1></div>
+
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <p class="gradivoUvodnoBesedilo">Prvi algoritem</p>
+                    <p class="gradivoTekst">Naš prvi "programerski problem" je iskanje največjega števila, ki ga izbiramo med tremi vnešenimi celimi števili. <br/>Za primer zglednih vhodov in izhodov se lahko zgledujemo po spodnji tabeli.</p>
+
+                </div>
+
+                <div class="col-3"></div>
+
+                <div class="col-6 gradivoTekst gradivoPoljePrimer01">
+
+                    <div class="row gradivoTekstVecje">
+
+                        <div class="col-6">VHOD</div>
+                        <div class="col-6">IZHOD</div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-6">(1, 2, 3)</div>
+                        <div class="col-6">3</div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-6">(-1, -2, -3)</div>
+                        <div class="col-6">-1</div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-6">(0, 0, 0)</div>
+                        <div class="col-6">0</div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-6">(5, 4, 5)</div>
+                        <div class="col-6">5</div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-6">(128, 148, 100)</div>
+                        <div class="col-6 gradivoNapaka01">100</div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-6">(8, 9, 7, 5)</div>
+                        <div class="col-6 gradivoNapaka01">9</div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-6">(4, 2, 0.25)</div>
+                        <div class="col-6 gradivoNapaka01">4</div>
+
+                    </div>
+
+                </div>
+
+                <div class="col3"></div>
+
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row">
+
+                <div class="col-1"></div>
+
+                <div class="col-6 gradivoTekst">
+
+                    Algoritem (zaporedje navodil, ki nas v končnem številu korakov pripelje do rezultata) lahko zapišemo na več različnih načinov. V sledeči vaji bomo algoritem zapisali:
+
+                </div>
+
+                <div class="col-1"></div>
+
+                <div class="col-4">
+
+                    <ol class="text-left splosnoUvodniTekst gradivoTekst" type="I">
+
+                        <li> v <b>naravnem jeziku</b></li>
+                        <li> s <b>psevdokodo</b></li>
+                        <li> v <b>programskem jeziku</b></li>
+                        <li> z <b>diagramom poteka</b></li>
+
+                    </ol>
+
+                </div>
+
+                <div class="col-1"></div>
+
+            </div>
+
+            <hr class="gradivoVodoravno"/>  
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <p class="gradivoUvodnoBesedilo">I. Algoritem, zapisan v naravnem jeziku</p>
+
+                </div>
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <code><p class="gradivoTekst kodaOzadje">
+                        <b>1. </b>Preberi vhod (tri cela števila).<br>
+                        <b>2. </b>Primerjaj prvi dve števili.<br>
+                        <b>3. </b>Če je prvo število večje od drugega, primerjaj še prvo in tretje. Če je prvo število večje od tretjega, izpiši prvo, drugače izpiši tretje.<br>
+                        <b>4. </b>Če je drugo število večje od prvega, primerjaj še drugo in tretje. Če je drugo število večje od tretjega, izpiši drugo, drugače izpiši tretje.<br>
+                    </p></code>
+                </div>
+                <div class="col-2"></div>
+
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <p class="gradivoUvodnoBesedilo">II. Algoritem, zapisan s psevdokodo</p>
+
+                </div>
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <code><p class="gradivoTekst kodaTekst kodaOzadje">
+                        <span class="rezerviranaBeseda">vhod</span>: cela števila <span class="spremenljivka">a</span>, <span class="spremenljivka">b</span> in <span class="spremenljivka">c</span><br>
+                        <span class="rezerviranaBeseda">če velja</span>: <span class="spremenljivka">a</span> > <span class="spremenljivka">b</span> potem: <br>
+                        <span class="prviTab rezerviranaBeseda">če velja</span>: <span class="spremenljivka">a</span> > <span class="spremenljivka">c</span> potem: <br>
+                        <span class="drugiTab rezerviranaBeseda">izhod</span>: <span class="spremenljivka">a</span><br>
+                        <span class="prviTab rezerviranaBeseda">sicer</span>:<br>
+                        <span class="drugiTab rezerviranaBeseda">izhod</span>: <span class="spremenljivka">c</span><br>
+                        <span class="rezerviranaBeseda">sicer</span>:<br>
+                        <span class="prviTab rezerviranaBeseda">če velja</span>: <span class="spremenljivka">b</span> > <span class="spremenljivka">c</span> potem: <br>
+                        <span class="drugiTab rezerviranaBeseda">izhod</span>: <span class="spremenljivka">b</span><br>
+                        <span class="prviTab rezerviranaBeseda">sicer</span>:<br>
+                        <span class="drugiTab rezerviranaBeseda">izhod</span>: <span class="spremenljivka">c</span><br>
+                    </p></code>
+                </div>
+                <div class="col-2"></div>
+
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <p class="gradivoUvodnoBesedilo">III. Algoritem, zapisan s programskim jezikom java</p>
+
+                </div>
+                <div class="col-2"></div>
+
+                <div class="col-8">
+                    <code><p class="gradivoTekst kodaTekst kodaOzadje">
+                        <span class="rezerviranaBeseda">import </span>java.util.Scanner; <br><br>
+                        <span class="rezerviranaBeseda">public class</span> <span class="tip">program </span>{<br>
+                            <span class="prviTab rezerviranaBeseda">public static </span><span class="tip">void</span> <span class="metoda">main</span>(<span class="">String</span>[] <span class="spremenljivka">args</span>) {<br>
+                                <span class="drugiTab">Scanner </span><span class="spremenljivka">sc </span>= <span class="rezerviranaBeseda">new </span> Scanner(System.in);<br><br>
+                                <span class="drugiTab tip">int</span> <span class="spremenljivka">a </span> = <span class="spremenljivka">sc</span>.<span class="metoda">nextInt</span>();<br>
+                                <span class="drugiTab tip">int</span> <span class="spremenljivka">b </span> = <span class="spremenljivka">sc</span>.<span class="metoda">nextInt</span>();<br>
+                                <span class="drugiTab tip">int</span> <span class="spremenljivka">b </span> = <span class="spremenljivka">sc</span>.<span class="metoda">nextInt</span>();<br><br>
+                                <span class="drugiTab rezerviranaBeseda">if </span> (a > b) {<br>
+                                    <span class="tretjiTab rezerviranaBeseda">if </span> (a > c) {<br>
+                                        <span class="cetrtiTab">System.out.</span><span class="metoda">println</span>(a);<br>
+                                    <span class="tretjiTab ">} <span class="rezerviranaBeseda">else </span>{ <br>
+                                        <span class="cetrtiTab">System.out.</span><span class="metoda">println</span>(c);<br>
+                                <span class="drugiTab ">} </span><span class="rezerviranaBeseda">else </span> {<br>
+                                    <span class="tretjiTab rezerviranaBeseda">if </span> (b > c) {<br>
+                                        <span class="cetrtiTab">System.out.</span><span class="metoda">println</span>(b);<br>
+                                    <span class="tretjiTab ">} <span class="rezerviranaBeseda">else </span>{ <br>
+                                        <span class="cetrtiTab">System.out.</span><span class="metoda">println</span>(c);<br>
+                                <span class="drugiTab ">}<br>
+                            <span class="prviTab ">}<br>
+                        <span class=" ">}
+                    </p></code>
+                </div>
+
+                <div class="col-2"></div>
+
+            </div>
+
+            <hr class="gradivoVodoravno"/>  
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <p class="gradivoUvodnoBesedilo">IV. Algoritem, zapisan z diagramom poteka</p>
+
+                </div>
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <img class="diagramPoteka" src="./vaje01.svg"/>
+                </div>
+                <div class="col-2"></div>
+
+            </div>
+
+            <hr class="gradivoVodoravno"/>  
+
+            <div class="row text-center">
+                <div class="col-1"></div>
+                <div class="col-10">
+                     
+                    <span class="gradivoTekstVecje">1. Naloga: </span>
+                    <span class="gradivoTekst">Narišite <b>diagram poteka</b> za algoritem, ki izpiše "Pozdravljen, Svet!".</span>
+
+                </div>
+                <div class="col-1"></div>
+                
+            </div>
+
+            <hr class="gradivoVodoravno"/>  
+
+            <div class="row text-center">
+                <div class="col-1"></div>
+                <div class="col-10">
+                     
+                    <span class="gradivoTekstVecje">2. Naloga: </span>
+                    <span class="gradivoTekst">Narišite <b>diagram poteka</b> za algoritem, ki izračuna in izpiše povprečje treh vnešenih celih števil.</span>
+
+                </div>
+                <div class="col-1"></div>
+                
+            </div>
+
+            <hr class="gradivoVodoravno"/>  
+
+            <div class="row text-center">
+                <div class="col-1"></div>
+
+                <div class="col-10">
+                     
+                    <span class="gradivoTekstVecje">3. Naloga: </span>
+                    <span class="gradivoTekst">Narišite <b>diagram poteka</b> za algoritem, ki prebere dve celi števili, njuni vrednosti med seboj zamenja in ju izpiše. <em>(Dobro premislite o vseh možnih načinih zamenjave.)</em></span>
+
+                </div>
+                <div class="col-1"></div>
+                
+            </div>
+
+            <hr class="gradivoVodoravno"/>  
+
+            <div class="row text-center">
+                <div class="col-1"></div>
+
+                <div class="col-10">
+                     
+                    <span class="gradivoTekstVecje">4. Naloga: </span>
+                    <span class="gradivoTekst">Narišite <b>diagram poteka</b> za algoritem, ki izpiše "liho", če je vnešeno celo število liho, oziroma "sodo", če je vnešeno celo število sodo.</span>
+
+                </div>
+                <div class="col-1"></div>
+                
+            </div>
+
+            <hr class="gradivoVodoravno"/>  
+
+            <div class="row text-center">
+                <div class="col-1"></div>
+                <div class="col-10">
+                     
+                    <span class="gradivoTekstVecje">5. Naloga: </span>
+                    <span class="gradivoTekst">Narišite <b>diagram poteka</b> za algoritem, ki izpiše večje izmed vnešenih celih števil.</span>
+
+                </div>
+                <div class="col-1"></div>
+                
+            </div>
+
+            <hr class="gradivoVodoravno"/>  
+
+            <div class="row text-center">
+                <div class="col-1"></div>
+                <div class="col-10">
+                     
+                    <span class="gradivoTekstVecje">6. Naloga: </span>
+                    <span class="gradivoTekst">Narišite <b>diagram poteka</b> za algoritem, ki izpiše vsoto prvih n števil (<em>n je vnešeno celo število</em>).</span>
+
+                </div>
+                <div class="col-1"></div>
+                
+            </div>
+
+            <div class="row">
+                <div class="col-12 konecStrani"></div>
+            </div>
+
+            <!-- AVTORSKE PRAVICE, TO JE ŠALA (HEC) -->
+            <div class="mokot">
+                &#169; mokot
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="./knjiznice/js/kodaIndex.js"></script>
+
+    </body>
+
+</html>

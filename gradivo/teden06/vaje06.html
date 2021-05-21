@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./../../knjiznice/css/stili.css">
+        <link rel="stylesheet" type="text/css" href="./../../knjiznice/css/stiliGradivo.css">
+
+        <link rel="shortcut icon" href="./../../java.ico" type="image/x-icon">
+
+        <title>Vaje: Operatorji_2, komentarji</title>
+
+    </head>
+
+    <body>
+
+        <div class="container text-center gradivoVsebina">
+
+            <div class="row text-center">
+
+                <div class="col-1"><button class="gradivoGumbDomov" onclick="location.href='./../../index.html'" type="button"><svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                  </svg></button></div>
+
+                <div class="col-11 poglavje02"><h1 class="gradivoNaslov">vaje: <span>OPERATORJI_2, KOMENTARJI</span></h1></div>
+
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <p class="gradivoUvodnoBesedilo">Operatorji nad biti</p>
+                    <p class="gradivoTekst">Zapisali bomo program v programskem jeziku java, ki prikazuje uporabo operatorjev nad biti.</p>
+
+                </div>
+                <div class="col-2"></div>
+
+                <div class="col-8">
+                    <code><p class="gradivoTekst kodaTekst kodaOzadje">
+                        <span class="rezerviranaBeseda">public class</span> <span class="tip">OperatorjiNadBiti </span>{<br>
+                            <span class="prviTab rezerviranaBeseda">public static </span><span class="tip">void</span> <span class="metoda">main</span>(<span class="">String</span>[] <span class="spremenljivka">args</span>) {<br><br>
+
+                                <span class="tip drugiTab">int</span><span class="spremenljivka"> stevilo1</span>,<span class="spremenljivka"> stevilo2</span>,<span class="spremenljivka"> rezultat</span>;<br><br>
+
+                                <span class="drugiTab">rezultat = stevilo1 | stevilo2;</span><br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(rezultat);<br><br>
+
+                                <span class="drugiTab">rezultat = stevilo1 & stevilo2;</span><br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(rezultat);<br><br>
+
+                                <span class="drugiTab tip">int </span><span class="spremenljivka">stevilo</span> = 35;<br>
+                                <span class="drugiTab">rezultat = ~stevilo;</span><br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(rezultat);<br><br>
+
+                                <span class="drugiTab">rezultat = stevilo1 ^ stevilo2;</span><br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(rezultat);<br><br>
+
+                                <span class="drugiTab">stevilo = 212;</span><br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(stevilo &#60;&#60; 1);<br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(stevilo &#60;&#60; 0);<br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(stevilo &#60;&#60; 4);<br><br>
+
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(stevilo &#62;&#62; 1);<br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(stevilo &#62;&#62; 0);<br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(stevilo &#62;&#62; 8);<br>
+
+                            <span class="prviTab ">}<br>
+                        <span class=" ">}
+                    </p></code>
+                </div>
+
+                <div class="col-2"></div>
+
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <p class="gradivoTekst">
+                        Program nam izpiše:
+                    </p>
+                </div>
+                <div class="col-1"></div>
+
+                <div class="col-2"></div>
+
+                <div class="col-8">
+                    <code><p class="gradivoTekst kodaTekst kodaOzadje">
+                        29<br>8<br>-36<br>21<br>424<br>212<br>3392<br>106<br>212<br>0
+                    </p></code>
+                </div>
+
+                <div class="col-2"></div>
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <p class="gradivoUvodnoBesedilo">Operatorji na krajše</p>
+                    <p class="gradivoTekst">Zapisali bomo program v programskem jeziku java, ki prikazuje uporabo aritmetičnih operatorjev na krajše.</p>
+
+                </div>
+                <div class="col-2"></div>
+
+                <div class="col-8">
+                    <code><p class="gradivoTekst kodaTekst kodaOzadje">
+                        <span class="rezerviranaBeseda">public class</span> <span class="tip">OperatorjiNaKrajse </span>{<br>
+                            <span class="prviTab rezerviranaBeseda">public static </span><span class="tip">void</span> <span class="metoda">main</span>(<span class="">String</span>[] <span class="spremenljivka">args</span>) {<br><br>
+
+                                <span class="tip drugiTab">int</span><span class="spremenljivka"> stevilo1</span>,<span class="spremenljivka"> stevilo2</span>;<br>
+                                <span class="drugiTab">stevilo1 = stevilo2 = 0;</span><br><br>
+
+                                <span class="drugiTab">stevilo1 = stevilo1 + 42;</span><br>
+                                <span class="drugiTab">stevilo2 += 42;</span><br><br>
+
+                                <span class="drugiTab">stevilo1 = stevilo1 - 18;</span><br>
+                                <span class="drugiTab">stevilo2 -= 18;</span><br><br>
+
+                                <span class="drugiTab">stevilo1 = stevilo1 * 2;</span><br>
+                                <span class="drugiTab">stevilo2 *= 2;</span><br><br>
+
+                                <span class="drugiTab">stevilo1 = stevilo1 / 6;</span><br>
+                                <span class="drugiTab">stevilo2 /= 6;</span><br><br>
+
+                                <span class="drugiTab">stevilo1 = stevilo1 % 5;</span><br>
+                                <span class="drugiTab">stevilo2 %= 5;</span><br><br>
+
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(stevilo1);<br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(stevilo2);<br>
+
+                            <span class="prviTab ">}<br>
+                        <span class=" ">}
+                    </p></code>
+                </div>
+
+                <div class="col-2"></div>
+
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <p class="gradivoTekst">
+                        Program nam izpiše:
+                    </p>
+                </div>
+                <div class="col-1"></div>
+
+                <div class="col-2"></div>
+
+                <div class="col-8">
+                    <code><p class="gradivoTekst kodaTekst kodaOzadje">
+                        3<br>3
+                    </p></code>
+                </div>
+
+                <div class="col-2"></div>
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <p class="gradivoUvodnoBesedilo">Komentarji</p>
+                    <p class="gradivoTekst">Zapisali bomo program v programskem jeziku java, ki prikazuje uporabo komentarjev.</p>
+
+                </div>
+                <div class="col-2"></div>
+
+                <div class="col-8">
+                    <code><p class="gradivoTekst kodaTekst kodaOzadje">
+                        <span class="rezerviranaBeseda">public class</span> <span class="tip">Komentarji </span>{<br>
+                            <span class="prviTab rezerviranaBeseda">public static </span><span class="tip">void</span> <span class="metoda">main</span>(<span class="">String</span>[] <span class="spremenljivka">args</span>) {<br><br>
+
+                                <span class="drugiTab komentar">// Primer enovrsticnega komentarja</span><br>
+                                <span class="drugiTab komentar">// Program izpise "Hello, World!"</span><br><br>
+
+                                <span class="drugiTab komentar">/*</span><br>
+                                <span class="drugiTab komentar" style="padding-left: 4.5em;">* Primer vecvrsitnega komentarja</span><br>
+                                <span class="drugiTab komentar" style="padding-left: 4.5em;">* Program izpise "Hello, World!"</span><br>
+                                <span class="drugiTab komentar" style="padding-left: 4.5em;">*/</span><br><br>
+
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(<span class="string">"Hello, World!"</span>);<br>
+
+                            <span class="prviTab ">}<br>
+                        <span class=" ">}
+                    </p></code>
+                </div>
+
+                <div class="col-2"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 konecStrani"></div>
+            </div>
+
+            <!-- AVTORSKE PRAVICE, TO JE ŠALA (HEC) -->
+            <div class="mokot">
+                &#169; mokot
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="./knjiznice/js/kodaIndex.js"></script>
+
+    </body>
+
+</html>

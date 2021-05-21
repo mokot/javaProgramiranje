@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./knjiznice/css/stili.css">
+
+        <link rel="shortcut icon" href="java.ico" type="image/x-icon">
+
+        <title>Java Programiranje</title>
+
+    </head>
+
+    <body>
+
+        <div class="container glavnaVsebina">
+
+            <div class="row text-center">
+
+                <div class="col-2">
+                    <img class="rounded mx-auto d-block glavnaSlika" src="slike/java.png"/>
+                </div>
+
+                <div class="col-9">
+                    <h1 class="display-1 glavnaNaslov"><span class="glavnaNaslov01">pro</span><span class="glavnaNaslov02">gra</span><span class="glavnaNaslov01">mi</span><span class="glavnaNaslov02">ra</span><span class="glavnaNaslov01">nje</span></h1>
+                </div>
+
+                <div class="col-1"></div>
+
+            </div>
+
+            <hr/>
+
+            <div class="row text-center">
+
+                <div class="col-12 uvodnoBesedilo">
+
+                    Obiskovalec, lepo pozdravljen! <br>
+                    Pred teboj se nahaja pomembna naloga. Kakorkoli si prišel do te spletne strani, namerno ali pač ne, važno je, da opraviš svojo dolžnost do vesolja in se spopadeš s sledečim java tutorialom.
+                    Po opravljenem tutorialu najverjetneje še ne boš postal računalniški g33k, profesionalni heker, sensei umetne inteligence ali master strojnega učenja, ampak boš prvi (največji) korak bližje temu, da boš to, oziroma kar si tvoj brezmejni um želi, postal.
+
+                </div>
+
+                <div class="col-12 povezavaSplosno">
+                    Splošne informacije o krožku: <button class="povezavaSplosnoSlikaGumb" onclick="window.open('./splosno.html')" type="button">
+                        <svg width="1.75em" height="1.75em" viewBox="0 0 16 16" class="bi bi-info-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.93 4.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                      </svg>
+                    </button>
+                </div>
+
+                <div class="col-12 povezavaSplosno" style="margin-top: 1em;">
+                    Javanski programi: <button class="povezavaSplosnoSlikaGumb" onclick="window.open('./programi.html')" type="button">
+                        <svg width="1.75em" height="1.75em" viewBox="0 0 16 16" class="bi bi-code-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                            <path fill-rule="evenodd" d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z"/>
+                          </svg>
+                    </button>
+                </div>
+
+                <div class="col-12 povezavaSplosno" style="margin-top: 1em;">
+                    Zbirka dodatnih nalog: <button class="povezavaSplosnoSlikaGumb" onclick="window.open('https://issuu.com/pipinovaknjiga/docs/upn_40_strani')" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.75em" height="1.75em" fill="currentColor" class="bi bi-journal-bookmark-fill" viewBox="0 0 16 16">
+                            <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                            <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                            <path fill-rule="evenodd" d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8V1z"/>
+                          </svg>
+                    </button>
+                </div>
+                
+                <!--
+                <div class="col-12 povezavaSplosno" style="margin-top: 1em;">
+                    Knjiga: <button class="povezavaSplosnoSlikaGumb" onclick="window.open('./knjiga.pdf')" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.75em" height="1.75em" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                          </svg>
+                    </button>
+                </div>
+                -->
+
+            </div>
+
+            <hr/>
+
+            <div class="row splosnoKazaloBarv">
+
+                <div class="col-12">
+                    <p>Poglavja, ki jih bomo tekom leta obravnavali: </p>
+                </div>
+
+                <div class="col-4 splosnoBarva poglavje01">
+                    <span>uvod v programiranje</span>
+                </div>
+
+                <div class="col-4 splosnoBarva poglavje02">
+                    <span>osnovni elementi</span>
+                </div>
+
+                <div class="col-4 splosnoBarva poglavje03">
+                    <span>vhod in izhod</span>
+                </div>
+
+                <div class="col-4 splosnoBarva poglavje04">
+                    <span>krmilni konstrukti</span>
+                </div>
+
+                <div class="col-4 splosnoBarva poglavje05">
+                    <span>metode</span>
+                </div>
+
+                <div class="col-4 splosnoBarva poglavje06">
+                    <span>tabele</span>
+                </div>
+
+                <div class="col-4 splosnoBarva poglavjeVaje">
+                    <span>vaje</span>
+                </div>
+
+                <div class="col-4 splosnoBarva poglavjeFinale">
+                    <span>finale</span>
+                </div>
+
+                <div class="col-4 splosnoBarva poglavjeRazno">
+                    <span>razno</span>
+                </div>
+
+            </div>
+
+            <hr class="splosnoHR"/>
+
+            <dib class="row splosnoNavigacija">
+
+                <div class="col-6">
+
+                    <ul class="list-group">
+                        
+                        <button class="splosnoGumbNavigacija poglavje01" onclick="location.href='#teden01'" type="button"><li class="list-group-item">UVOD</li></button>
+                        <button class="splosnoGumbNavigacija poglavje01" onclick="location.href='#teden02'" type="button"><li class="list-group-item">PRVI KORAKI</li></button>
+                        <button class="splosnoGumbNavigacija poglavje01" onclick="location.href='#teden03'" type="button"><li class="list-group-item">PRVI PROGRAM</li></button>
+                        <button class="splosnoGumbNavigacija poglavje02" onclick="location.href='#teden04'" type="button"><li class="list-group-item">SPREMENLJIVKE, PODATKOVNI TIPI</li></button>
+                        <button class="splosnoGumbNavigacija poglavje02" onclick="location.href='#teden05'" type="button"><li class="list-group-item">OPERATORJI_1</li></button>
+                        <button class="splosnoGumbNavigacija poglavje02" onclick="location.href='#teden06'" type="button"><li class="list-group-item">OPERATORJI_2, KOMENTARJI</li></button>
+                        <button class="splosnoGumbNavigacija poglavjeVaje" onclick="location.href='#teden07'" type="button"><li class="list-group-item">VAJE</li></button>
+                        <button class="splosnoGumbNavigacija poglavje03" onclick="location.href='#teden08'" type="button"><li class="list-group-item">VHOD IN IZHOD</li></button>
+                        <button class="splosnoGumbNavigacija poglavje04" onclick="location.href='#teden09'" type="button"><li class="list-group-item">IF, IF-ELSE, IF-ELSEIF-ELSE</li></button>
+                        <button class="splosnoGumbNavigacija poglavje04" onclick="location.href='#teden10'" type="button"><li class="list-group-item">FOR, WHILE, DO-WHILE</li></button>
+                        <button class="splosnoGumbNavigacija poglavje04" onclick="location.href='#teden11'" type="button"><li class="list-group-item">SWITCH, POGOJNI OPERATOR, BREAK, CONTINUE</li></button>
+                        <button class="splosnoGumbNavigacija poglavjeVaje" onclick="location.href='#teden12'" type="button"><li class="list-group-item">VAJE</li></button>
+                        
+                    </ul>
+
+                </div>
+
+                <div class="col-6">
+
+                    <ul class="list-group">
+
+                        <button class="splosnoGumbNavigacija poglavje05" onclick="location.href='#teden13'" type="button"><li class="list-group-item">METODE_1</li></button>
+                        <button class="splosnoGumbNavigacija poglavje05" onclick="location.href='#teden14'" type="button"><li class="list-group-item">METODE_2</li></button>
+                        <button class="splosnoGumbNavigacija poglavjeVaje" onclick="location.href='#teden15'" type="button"><li class="list-group-item">VAJE</li></button>
+                        <button class="splosnoGumbNavigacija poglavje06" onclick="location.href='#teden16'" type="button"><li class="list-group-item">TABELE_1</li></button>
+                        <button class="splosnoGumbNavigacija poglavje06" onclick="location.href='#teden17'" type="button"><li class="list-group-item">TABELE_2</li></button>
+                        <button class="splosnoGumbNavigacija poglavjeVaje" onclick="location.href='#teden18'" type="button"><li class="list-group-item">VAJE</li></button>
+                        <button class="splosnoGumbNavigacija poglavje06" onclick="location.href='#teden19'" type="button"><li class="list-group-item">TABELE_3</li></button>
+                        <button class="splosnoGumbNavigacija poglavjeVaje" onclick="location.href='#teden20'" type="button"><li class="list-group-item">VAJE</li></button>
+                        <button class="splosnoGumbNavigacija poglavjeVaje" onclick="location.href='#teden21'" type="button"><li class="list-group-item">VAJE</li></button>
+                        <button class="splosnoGumbNavigacija poglavjeFinale" onclick="location.href='#teden22'" type="button"><li class="list-group-item">FINALE</li></button>
+                        <button class="splosnoGumbNavigacija poglavjeRazno" onclick="location.href='#teden23'" type="button"><li class="list-group-item">RAZNO_1</li></button>
+                        <button class="splosnoGumbNavigacija poglavjeRazno" onclick="location.href='#teden24'" type="button"><li class="list-group-item">RAZNO_2</li></button>
+
+                    </ul>
+
+                </div>
+
+            </dib>
+
+            <hr class="vodoravnaPrva"/>
+
+            <div id="teden01" class="row text-center poglavje01 seznamTeden">
+
+                <div class="col-3 karticaTeden poglavje01">
+                    Teden 01 - <span class="seznamNaslov">uvod</span>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">predavanje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-chat-text" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                                    <path fill-rule="evenodd" d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8zm0 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Spoznavanje, plan dela, reševanje problema, diagrami poteka</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden01/vaje01.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">vaje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Programiranje v naravnem jeziku in z diagrami poteka</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden01/domacaNaloga01.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">naloga <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Programiranje z diagrami poteka</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="teden02" class="row text-center poglavje01 seznamTeden">
+
+                <div class="col-3 karticaTeden poglavje01">
+                    Teden 02 - <span class="seznamNaslov">prvi koraki</span>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">predavanje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-chat-text" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                                    <path fill-rule="evenodd" d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8zm0 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Program v javi, uvod v projekt <a href="https://pisek.acm.si/" target="_blank">pisek</a></p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden02/vaje02.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">vaje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Programiranje z diagrami poteka, vaje projekta pisek</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden02/domacaNaloga02.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">naloga <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Programiranje z diagrami poteka, naloge projekta pisek</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="teden03" class="row text-center poglavje01 seznamTeden">
+
+                <div class="col-3 karticaTeden poglavje01">
+                    Teden 03 - <span class="seznamNaslov">prvi program</span>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">predavanje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-chat-text" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                                    <path fill-rule="evenodd" d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8zm0 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Programski jeziki, namestitev, prvi program, prevajanje in zagon</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden03/vaje03.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">vaje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Drugi program, napačen program, odpravljanje napak</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden03/domacaNaloga03.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">naloga <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Prvi programi v javi, zaznavanje in odpravljanje napak</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="vodoravnaPrva"/>
+
+            <div id="teden04" class="row text-center poglavje02 seznamTeden">
+
+                <div class="col-3 karticaTeden poglavje02">
+                    Teden 04 - <span class="seznamNaslov">spremenljivke, podatkovni tipi</span>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">predavanje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-chat-text" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                                    <path fill-rule="evenodd" d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8zm0 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Leksikalni elementi, deklaracija in inicializacija, podatkovni tipi</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden04/vaje04.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">vaje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Ponovitev deklaracije in inicializacije, blok in doseg spremenljivk, razlike med tipi</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden04/domacaNaloga04.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">naloga <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Deklaracija in inicializacija, razlikovanje med podatkovnimi tipi</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="teden05" class="row text-center poglavje02 seznamTeden">
+
+                <div class="col-3 karticaTeden poglavje02">
+                    Teden 05 - <span class="seznamNaslov">operatorji_1</span>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">predavanje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-chat-text" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                                    <path fill-rule="evenodd" d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8zm0 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Aritmetični, primerjalni, logični operatorji, delo z operatorji</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden05/vaje05.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">vaje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Uporaba in razlikovanje operatorjev, enojni operator</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden05/domacaNaloga05.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">naloga <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Uporaba operatorjev v preprostih programih</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="teden06" class="row text-center poglavje02 seznamTeden">
+
+                <div class="col-3 karticaTeden poglavje02">
+                    Teden 06 - <span class="seznamNaslov">operatorji_2, komentarji</span>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">predavanje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-chat-text" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                                    <path fill-rule="evenodd" d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8zm0 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Operatorji nad biti, operatorji na krajše</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden06/vaje06.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">vaje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Uporaba operatorjev, enovrstični in bločni komentarji</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden06/domacaNaloga06.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">naloga <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Uporaba operatorjev v preprostih programih</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+
+            <hr class="vodoravnaPrva"/>
+
+            <div id="teden07" class="row text-center poglavjeVaje seznamTeden">
+
+                <div class="col-3 karticaTeden poglavjeVaje">
+                    Teden 07 - <span class="seznamNaslov">vaje</span>
+                </div>
+
+                <div class="col-1 d-flex align-items-stretch"></div>
+
+                <div class="col-7 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden07/ponovitev07.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">vaje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-controller" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M11.119 2.693c.904.19 1.75.495 2.235.98.407.408.779 1.05 1.094 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.815-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773a11.307 11.307 0 0 1-.739-.809c-.126-.147-.25-.291-.368-.422-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.422-.243.283-.494.576-.739.81-.398.378-.877.705-1.513.772a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772.486-.485 1.331-.79 2.235-.98.932-.196 2.03-.292 3.119-.292 1.089 0 2.187.096 3.119.292zm-6.032.979c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.505C4.861 9.97 5.978 9.026 8 9.026s3.139.943 3.965 1.855c.164.182.307.35.44.505.214.25.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z"/>
+                                    <path d="M11.5 6.026a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1 1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1 1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-7-2.5h1v3h-1v-3z"/>
+                                    <path d="M3.5 6.526h3v1h-3v-1zM3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .258.966l-1.932.518a.5.5 0 0 1-.612-.354zm9.976 0a.5.5 0 0 0-.353-.613l-1.932-.518a.5.5 0 1 0-.259.966l1.932.518a.5.5 0 0 0 .612-.354z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Utrjevanje snovi, reševanje dodatnih nalog za vajo, ponavljanje nejasnih snovi, pomoč pri domačih nalogah</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-1 d-flex align-items-stretch"></div>
+                
+            </div>
+
+            <hr class="vodoravnaPrva"/>
+
+            <div id="teden08" class="row text-center poglavje03 seznamTeden">
+
+                <div class="col-3 karticaTeden poglavje03">
+                    Teden 08 - <span class="seznamNaslov">vhod in izhod</span>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">predavanje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-chat-text" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                                    <path fill-rule="evenodd" d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8zm0 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Izhod iz programa, vhod v program</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden08/vaje08.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">vaje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Program, ki bere iz vhoda in piše na izhod</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden08/domacaNaloga08.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">naloga <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Uporaba branja standardenga vhoda in pisanja na standardni izhod</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+
+            <hr class="vodoravnaPrva"/>
+
+            <div id="teden09" class="row text-center poglavje04 seznamTeden">
+
+                <div class="col-3 karticaTeden poglavje04">
+                    Teden 09 - <span class="seznamNaslov">if, if-else, if-elseif-else</span>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">predavanje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-chat-text" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                                    <path fill-rule="evenodd" d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8zm0 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Stavek if, else in else-if, uporaba v programu</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden09/vaje09.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">vaje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Utrjevanje izbirnih stavkov na primerih</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden09/domacaNaloga09.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">naloga <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Dodatni programi, ki uporabljajo izbirne stavke</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div id="teden10" class="row text-center poglavje04 seznamTeden">
+
+                <div class="col-3 karticaTeden poglavje04">
+                    Teden 10 - <span class="seznamNaslov">for, while, do-while</span>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">predavanje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-chat-text" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                                    <path fill-rule="evenodd" d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8zm0 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Zanka for, while in do-while, uporaba v programu</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden10/vaje10.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">vaje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Utrjevanje zank na primerih</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden10/domacaNaloga10.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">naloga <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Dodatni programi, ki uporabljajo zanke</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div id="teden11" class="row text-center poglavje04 seznamTeden">
+
+                <div class="col-3 karticaTeden poglavje04">
+                    Teden 11 - <span class="seznamNaslov">switch, pogojni operator, break, continue</span>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">predavanje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-chat-text" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                                    <path fill-rule="evenodd" d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8zm0 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Stavek switch in pogojni operator, uporaba v programu</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden11/vaje11.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">vaje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Uporaba stavka break and continue, ponovitev izbirnih stavkov in zank</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden11/domacaNaloga11.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">naloga <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Utrjevanje programiranja z izbirnimi stavki in zankami</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+
+            <hr class="vodoravnaPrva"/>
+
+            <div id="teden12" class="row text-center poglavjeVaje seznamTeden">
+
+                <div class="col-3 karticaTeden poglavjeVaje">
+                    Teden 12 - <span class="seznamNaslov">vaje</span>
+                </div>
+
+                <div class="col-1 d-flex align-items-stretch"></div>
+
+                <div class="col-7 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden12/ponovitev12.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">vaje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-controller" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M11.119 2.693c.904.19 1.75.495 2.235.98.407.408.779 1.05 1.094 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.815-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773a11.307 11.307 0 0 1-.739-.809c-.126-.147-.25-.291-.368-.422-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.422-.243.283-.494.576-.739.81-.398.378-.877.705-1.513.772a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772.486-.485 1.331-.79 2.235-.98.932-.196 2.03-.292 3.119-.292 1.089 0 2.187.096 3.119.292zm-6.032.979c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.505C4.861 9.97 5.978 9.026 8 9.026s3.139.943 3.965 1.855c.164.182.307.35.44.505.214.25.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z"/>
+                                    <path d="M11.5 6.026a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1 1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1 1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-7-2.5h1v3h-1v-3z"/>
+                                    <path d="M3.5 6.526h3v1h-3v-1zM3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .258.966l-1.932.518a.5.5 0 0 1-.612-.354zm9.976 0a.5.5 0 0 0-.353-.613l-1.932-.518a.5.5 0 1 0-.259.966l1.932.518a.5.5 0 0 0 .612-.354z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Utrjevanje snovi, reševanje dodatnih nalog za vajo, ponavljanje nejasnih snovi, pomoč pri domačih nalogah</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-1 d-flex align-items-stretch"></div>
+                
+            </div>
+
+            <hr class="vodoravnaPrva"/>
+
+            <div id="teden13" class="row text-center poglavje05 seznamTeden">
+
+                <div class="col-3 karticaTeden poglavje05">
+                    Teden 13 - <span class="seznamNaslov">metode_1</span>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">predavanje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-chat-text" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                                    <path fill-rule="evenodd" d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8zm0 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Vgrajene in lastne metode, definicija in klic metode</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden13/vaje13.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">vaje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Metode brez argumentov in vračanja vrednosti</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden13/domacaNaloga13.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">naloga <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Definicija in uporaba metod v programih</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div id="teden14" class="row text-center poglavje05 seznamTeden">
+
+                <div class="col-3 karticaTeden poglavje05">
+                    Teden 14 - <span class="seznamNaslov">metode_2</span>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">predavanje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-chat-text" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                                    <path fill-rule="evenodd" d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8zm0 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Metode s prenesenimi parametri, vračanje vrednosti metode</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden14/vaje14.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">vaje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Stavek return, uporaba metod v programih</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden14/domacaNaloga14.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">naloga <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Metode s in brez prenesenih parametrov, uporaba v programu</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+
+            <hr class="vodoravnaPrva"/>
+
+            <div id="teden15" class="row text-center poglavjeVaje seznamTeden">
+
+                <div class="col-3 karticaTeden poglavjeVaje">
+                    Teden 15 - <span class="seznamNaslov">vaje</span>
+                </div>
+
+                <div class="col-1 d-flex align-items-stretch"></div>
+
+                <div class="col-7 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden15/ponovitev15.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">vaje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-controller" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M11.119 2.693c.904.19 1.75.495 2.235.98.407.408.779 1.05 1.094 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.815-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773a11.307 11.307 0 0 1-.739-.809c-.126-.147-.25-.291-.368-.422-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.422-.243.283-.494.576-.739.81-.398.378-.877.705-1.513.772a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772.486-.485 1.331-.79 2.235-.98.932-.196 2.03-.292 3.119-.292 1.089 0 2.187.096 3.119.292zm-6.032.979c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.505C4.861 9.97 5.978 9.026 8 9.026s3.139.943 3.965 1.855c.164.182.307.35.44.505.214.25.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z"/>
+                                    <path d="M11.5 6.026a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1 1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1 1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-7-2.5h1v3h-1v-3z"/>
+                                    <path d="M3.5 6.526h3v1h-3v-1zM3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .258.966l-1.932.518a.5.5 0 0 1-.612-.354zm9.976 0a.5.5 0 0 0-.353-.613l-1.932-.518a.5.5 0 1 0-.259.966l1.932.518a.5.5 0 0 0 .612-.354z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Utrjevanje snovi, reševanje dodatnih nalog za vajo, ponavljanje nejasnih snovi, pomoč pri domačih nalogah</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-1 d-flex align-items-stretch"></div>
+                
+            </div>
+
+            <hr class="vodoravnaPrva"/>
+
+            <div id="teden16" class="row text-center poglavje06 seznamTeden">
+
+                <div class="col-3 karticaTeden poglavje06">
+                    Teden 16 - <span class="seznamNaslov">tabele_1</span>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">predavanje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-chat-text" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                                    <path fill-rule="evenodd" d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8zm0 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Definicija, deklaracija in inicializacija tabele</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden16/vaje16.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">vaje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Primer tabel in dostop do elementov tabele</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden16/domacaNaloga16.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">naloga <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Ponovitev tabel in uporaba tabel v programih</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div id="teden17" class="row text-center poglavje06 seznamTeden">
+
+                <div class="col-3 karticaTeden poglavje06">
+                    Teden 17 - <span class="seznamNaslov">tabele_2</span>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">predavanje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-chat-text" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                                    <path fill-rule="evenodd" d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8zm0 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Sprehod po elementih tabele in iskanje elementa v tabeli</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden17/vaje17.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">vaje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Navadno in dvojiško iskanje, omemba urejanja tabel</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden17/domacaNaloga17.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">naloga <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Ponovitev tabel in uporaba tabel v programih</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+
+            <hr class="vodoravnaPrva"/>
+
+            <div id="teden18" class="row text-center poglavjeVaje seznamTeden">
+
+                <div class="col-3 karticaTeden poglavjeVaje">
+                    Teden 18 - <span class="seznamNaslov">vaje</span>
+                </div>
+
+                <div class="col-1 d-flex align-items-stretch"></div>
+
+                <div class="col-7 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden18/ponovitev18.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">vaje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-controller" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M11.119 2.693c.904.19 1.75.495 2.235.98.407.408.779 1.05 1.094 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.815-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773a11.307 11.307 0 0 1-.739-.809c-.126-.147-.25-.291-.368-.422-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.422-.243.283-.494.576-.739.81-.398.378-.877.705-1.513.772a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772.486-.485 1.331-.79 2.235-.98.932-.196 2.03-.292 3.119-.292 1.089 0 2.187.096 3.119.292zm-6.032.979c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.505C4.861 9.97 5.978 9.026 8 9.026s3.139.943 3.965 1.855c.164.182.307.35.44.505.214.25.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z"/>
+                                    <path d="M11.5 6.026a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1 1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1 1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-7-2.5h1v3h-1v-3z"/>
+                                    <path d="M3.5 6.526h3v1h-3v-1zM3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .258.966l-1.932.518a.5.5 0 0 1-.612-.354zm9.976 0a.5.5 0 0 0-.353-.613l-1.932-.518a.5.5 0 1 0-.259.966l1.932.518a.5.5 0 0 0 .612-.354z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Utrjevanje snovi, reševanje dodatnih nalog za vajo, ponavljanje nejasnih snovi, pomoč pri domačih nalogah</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-1 d-flex align-items-stretch"></div>
+                
+            </div>
+
+            <hr class="vodoravnaPrva"/>
+
+            <div id="teden19" class="row text-center poglavje06 seznamTeden"    >
+
+                <div class="col-3 karticaTeden poglavje06">
+                    Teden 19 - <span class="seznamNaslov">tabele_3</span>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" type="button"> 
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">predavanje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-chat-text" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                                    <path fill-rule="evenodd" d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8zm0 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Dvodimenzionalne tabele in omemba trodimenzionalnih tabel</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden19/vaje19.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">vaje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Dostop do elementov in sprehod po elementih dvodimenzionalne tabele</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden19/domacaNaloga19.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">naloga <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Ponovitev enodimenzionalnih in dvodimenzionalnih tabel, uporaba v programu</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+
+            <hr class="vodoravnaPrva"/>
+
+            <div id="teden20" class="row text-center poglavjeVaje seznamTeden">
+
+                <div class="col-3 karticaTeden poglavjeVaje">
+                    Teden 20 - <span class="seznamNaslov">vaje</span>
+                </div>
+
+                <div class="col-1 d-flex align-items-stretch"></div>
+
+                <div class="col-7 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden20/ponovitev20.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">vaje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-controller" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M11.119 2.693c.904.19 1.75.495 2.235.98.407.408.779 1.05 1.094 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.815-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773a11.307 11.307 0 0 1-.739-.809c-.126-.147-.25-.291-.368-.422-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.422-.243.283-.494.576-.739.81-.398.378-.877.705-1.513.772a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772.486-.485 1.331-.79 2.235-.98.932-.196 2.03-.292 3.119-.292 1.089 0 2.187.096 3.119.292zm-6.032.979c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.505C4.861 9.97 5.978 9.026 8 9.026s3.139.943 3.965 1.855c.164.182.307.35.44.505.214.25.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z"/>
+                                    <path d="M11.5 6.026a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1 1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1 1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-7-2.5h1v3h-1v-3z"/>
+                                    <path d="M3.5 6.526h3v1h-3v-1zM3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .258.966l-1.932.518a.5.5 0 0 1-.612-.354zm9.976 0a.5.5 0 0 0-.353-.613l-1.932-.518a.5.5 0 1 0-.259.966l1.932.518a.5.5 0 0 0 .612-.354z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Kopiranje enodimenzionalne in dvodimenzionalne tabele, utrjevanje snovi, reševanje dodatnih nalog za vajo, ponavljanje nejasnih snovi, pomoč pri domačih nalogah</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-1 d-flex align-items-stretch"></div>
+                
+            </div>
+
+            <div id="teden21" class="row text-center poglavjeVaje seznamTeden">
+
+                <div class="col-3 karticaTeden poglavjeVaje">
+                    Teden 21 - <span class="seznamNaslov">vaje</span>
+                </div>
+
+                <div class="col-1 d-flex align-items-stretch"></div>
+
+                <div class="col-7 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden21/ponovitev21.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">vaje <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-controller" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M11.119 2.693c.904.19 1.75.495 2.235.98.407.408.779 1.05 1.094 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.815-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773a11.307 11.307 0 0 1-.739-.809c-.126-.147-.25-.291-.368-.422-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.422-.243.283-.494.576-.739.81-.398.378-.877.705-1.513.772a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772.486-.485 1.331-.79 2.235-.98.932-.196 2.03-.292 3.119-.292 1.089 0 2.187.096 3.119.292zm-6.032.979c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.505C4.861 9.97 5.978 9.026 8 9.026s3.139.943 3.965 1.855c.164.182.307.35.44.505.214.25.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z"/>
+                                    <path d="M11.5 6.026a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1 1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1 1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-7-2.5h1v3h-1v-3z"/>
+                                    <path d="M3.5 6.526h3v1h-3v-1zM3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .258.966l-1.932.518a.5.5 0 0 1-.612-.354zm9.976 0a.5.5 0 0 0-.353-.613l-1.932-.518a.5.5 0 1 0-.259.966l1.932.518a.5.5 0 0 0 .612-.354z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Primer rekurzije, utrjevanje snovi, reševanje dodatnih nalog za vajo, ponavljanje nejasnih snovi, pomoč pri domačih nalogah</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-1 d-flex align-items-stretch"></div>
+                
+            </div>
+
+            <hr class="vodoravnaPrva"/>
+
+            <div id="teden22" class="row text-center poglavjeFinale seznamTeden">
+
+                <div class="col-3 karticaTeden poglavjeFinale">
+                    Teden 22 - <span class="seznamNaslov">finale</span>
+                </div>
+
+                <div class="col-1 d-flex align-items-stretch"></div>
+
+                <div class="col-7 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden22/finale22.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">FINALE <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-exclamation-octagon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353L4.54.146zM5.1 1L1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1H5.1z"/>
+                                    <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Poljubno preverjanje pridobljenega znanja tekom leta, štiri naloge, ki se bodo preverjale na testnih primerih, ocena vpisana po lastni želji kandidata</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-1 d-flex align-items-stretch"></div>
+                
+            </div>
+
+            <hr class="vodoravnaPrva"/>
+
+            <div id="teden23" class="row text-center poglavjeRazno seznamTeden">
+
+                <div class="col-3 karticaTeden poglavjeRazno">
+                    Teden 23 - <span class="seznamNaslov">razno_1</span>
+                </div>
+
+                <div class="col-1 d-flex align-items-stretch"></div>
+
+                <div class="col-7 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden23/razno23.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">razno <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-laptop" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M13.5 3h-11a.5.5 0 0 0-.5.5V11h12V3.5a.5.5 0 0 0-.5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11z"/>
+                                    <path d="M0 12h16v.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5V12z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Pogovor na temo poljubne računalniške tematike, pregled celotne naučene snovi, primer programa</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-1 d-flex align-items-stretch"></div>
+                
+            </div>
+
+            <div id="teden24" class="row text-center poglavjeRazno seznamTeden">
+
+                <div class="col-3 karticaTeden poglavjeRazno">
+                    Teden 24 - <span class="seznamNaslov">razno_2</span>
+                </div>
+
+                <div class="col-1 d-flex align-items-stretch"></div>
+
+                <div class="col-7 d-flex align-items-stretch">
+                    <div class="card">
+                        <button class="karticaGumb" onclick="location.href='./gradivo/teden24/razno24.html'" type="button">
+                            <div class="card-body">
+                                <h5 class="card-title karticaNaslov">razno <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-laptop" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M13.5 3h-11a.5.5 0 0 0-.5.5V11h12V3.5a.5.5 0 0 0-.5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11z"/>
+                                    <path d="M0 12h16v.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5V12z"/>
+                                  </svg>
+                                </h5>
+                                <hr/>
+                                <p class="card-text">Pogovor na temo poljubne računalniške tematike, pregled celotne naučene snovi, primer programa</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-1 d-flex align-items-stretch"></div>
+                
+            </div>
+
+            <div class="row">
+                <div class="col-12 konecStrani"></div>
+            </div>
+
+            <button onclick="topFunction()" id="gumbIndexGor" title="Gor"><svg width="2.25em" height="2.25em" viewBox="0 0 16 16" class="bi bi-arrow-up-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+              </svg></button>
+
+            <!-- AVTORSKE PRAVICE, TO JE ŠALA (HEC) -->
+            <div class="mokot">
+                &#169; mokot
+            </div>
+
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="./knjiznice/js/kodaIndex.js"></script>
+
+    </body>
+
+</html>

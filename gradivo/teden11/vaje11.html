@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./../../knjiznice/css/stili.css">
+        <link rel="stylesheet" type="text/css" href="./../../knjiznice/css/stiliGradivo.css">
+
+        <link rel="shortcut icon" href="./../../java.ico" type="image/x-icon">
+
+        <title>Vaje: Switch, pogojni operator, break, continue</title>
+
+    </head>
+
+    <body>
+
+        <div class="container text-center gradivoVsebina">
+
+            <div class="row text-center">
+
+                <div class="col-1"><button class="gradivoGumbDomov" onclick="location.href='./../../index.html'" type="button"><svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                  </svg></button></div>
+
+                <div class="col-11 poglavje04"><h1 class="gradivoNaslov">vaje: <span>SWITCH, POGOJNI OPERATOR, BREAK, CONTINUE</span></h1></div>
+
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <p class="gradivoUvodnoBesedilo">Stavek switch</p>
+                    <p class="gradivoTekst">Zapisali bomo program v programskem jeziku java, ki prikazuje uporabo stavka switch.</p>
+
+                </div>
+                <div class="col-2"></div>
+
+                <div class="col-8">
+                    <code><p class="gradivoTekst kodaTekst kodaOzadje">
+                        <span class="rezerviranaBeseda">import </span>java.util.Scanner;<br><br>
+                        <span class="rezerviranaBeseda">public class</span> <span class="tip">Switch </span>{<br>
+                            <span class="prviTab rezerviranaBeseda">public static </span><span class="tip">void</span> <span class="metoda">main</span>(<span class="">String</span>[] <span class="spremenljivka">args</span>) {<br><br>
+
+                                <span class="drugiTab tip">Scanner </span><span class="spremenljivka">sc </span>- <span class="rezerviranaBeseda">new </span>Scanner(<span class="metoda">System.in</span>);<br><br>
+
+                                <span class="drugiTab tip">int </span><span class="spremenljivka">ocena</span> = sc.<span class="metoda">nextInt</span>();<br><br>
+
+                                <span class="drugiTab rezerviranaBeseda">switch </span>(ocena) {<br>
+                                    <span class="tretjiTab rezerviranaBeseda">case </span>5:<br>    
+                                        <span class="cetrtiTab">System.out.</span><span class="metoda">println</span>(<span class="string">"odlicno"</span>);<br>
+                                        <span class="cetrtiTab rezerviranaBeseda">break</span>;<br>
+                                    <span class="tretjiTab rezerviranaBeseda">case </span>4:<br>    
+                                        <span class="cetrtiTab">System.out.</span><span class="metoda">println</span>(<span class="string">"prav dobro"</span>);<br>
+                                        <span class="cetrtiTab rezerviranaBeseda">break</span>;<br>
+                                    <span class="tretjiTab rezerviranaBeseda">case </span>3:<br>    
+                                        <span class="cetrtiTab">System.out.</span><span class="metoda">println</span>(<span class="string">"dobro"</span>);<br>
+                                        <span class="cetrtiTab rezerviranaBeseda">break</span>;<br>
+                                    <span class="tretjiTab rezerviranaBeseda">case </span>2:<br>    
+                                        <span class="cetrtiTab">System.out.</span><span class="metoda">println</span>(<span class="string">"zadostno"</span>);<br>
+                                        <span class="cetrtiTab rezerviranaBeseda">break</span>;<br>
+                                    <span class="tretjiTab rezerviranaBeseda">case </span>1:<br>    
+                                        <span class="cetrtiTab">System.out.</span><span class="metoda">println</span>(<span class="string">"nezadostno"</span>);<br>
+                                        <span class="cetrtiTab rezerviranaBeseda">break</span>;<br>
+                                    <span class="tretjiTab rezerviranaBeseda">default</span>:<br>    
+                                        <span class="cetrtiTab">System.out.</span><span class="metoda">println</span>(<span class="string">"neveljavna ocena"</span>);<br>
+                                        <span class="cetrtiTab rezerviranaBeseda">break</span>;<br>
+                                    <span class="drugiTab">}</span><br>
+                            <span class="prviTab ">}<br>
+                        <span class=" ">}
+                    </p></code>
+                </div>
+
+                <div class="col-2"></div>
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <p class="gradivoUvodnoBesedilo">Pogojni operator</p>
+                    <p class="gradivoTekst">Zapisali bomo program v programskem jeziku java, ki prikazuje uporabo pogojnega operatorja.</p>
+
+                </div>
+                <div class="col-1"></div>
+
+                <div class="col-10">
+                    <code><p class="gradivoTekst kodaTekst kodaOzadje">
+                        <span class="rezerviranaBeseda">public class</span> <span class="tip">PogojniOperator </span>{<br>
+                            <span class="prviTab rezerviranaBeseda">public static </span><span class="tip">void</span> <span class="metoda">main</span>(<span class="">String</span>[] <span class="spremenljivka">args</span>) {<br><br>
+
+                                <span class="drugiTab tip">int </span><span class="spremenljivka">stevilo</span> = 42;<br>
+                                <span class="drugiTab tip">String </span><span class="spremenljivka">resitev</span>;<br><br>
+
+                                <span class="drugiTab">resitev = </span>(stevilo == 42) ? (<span class="string">"odgovor obstaja"</span>) : (<span class="string">"navadno stevilo"</span>);<br><br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(resitev);<br>
+
+                            <span class="prviTab ">}<br>
+                        <span class=" ">}
+                    </p></code>
+                </div>
+
+                <div class="col-1"></div>
+
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <p class="gradivoTekst">
+                        Program nam izpiše:
+                    </p>
+                </div>
+                <div class="col-1"></div>
+
+                <div class="col-2"></div>
+
+                <div class="col-8">
+                    <code><p class="gradivoTekst kodaTekst kodaOzadje">
+                        odgovor obstsja
+                    </p></code>
+                </div>
+
+                <div class="col-2"></div>
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <p class="gradivoUvodnoBesedilo">Stavek break</p>
+                    <p class="gradivoTekst">Zapisali bomo program v programskem jeziku java, ki prikazuje uporabo stavka break.</p>
+
+                </div>
+                <div class="col-2"></div>
+
+                <div class="col-8">
+                    <code><p class="gradivoTekst kodaTekst kodaOzadje">
+                        <span class="rezerviranaBeseda">public class</span> <span class="tip">Break </span>{<br>
+                            <span class="prviTab rezerviranaBeseda">public static </span><span class="tip">void</span> <span class="metoda">main</span>(<span class="">String</span>[] <span class="spremenljivka">args</span>) {<br><br>
+
+                                <span class="drugiTab rezerviranaBeseda">for </span>(<span class="tip">int </span><span class="spremenljivka">stevilo</span> = 1; stevilo <= 10; stevilo++) {<br><br>
+                                    <span class="tretjiTab rezerviranaBeseda">if </span>(stevilo == 5) {<br>
+                                        <span class="cetrtiTab rezerviranaBeseda">break</span>;<br>
+                                    <span class="tretjiTab">}</span><br><br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(stevilo);<br>
+
+                            <span class="prviTab ">}<br>
+                        <span class=" ">}
+                    </p></code>
+                </div>
+
+                <div class="col-2"></div>
+
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <p class="gradivoTekst">
+                        Program nam izpiše:
+                    </p>
+                </div>
+                <div class="col-1"></div>
+
+                <div class="col-2"></div>
+
+                <div class="col-8">
+                    <code><p class="gradivoTekst kodaTekst kodaOzadje">
+                        1<br>2<br>3<br>4
+                    </p></code>
+                </div>
+
+                <div class="col-2"></div>
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <p class="gradivoUvodnoBesedilo">Stavek continue</p>
+                    <p class="gradivoTekst">Zapisali bomo program v programskem jeziku java, ki prikazuje uporabo stavka continue.</p>
+
+                </div>
+                <div class="col-2"></div>
+
+                <div class="col-8">
+                    <code><p class="gradivoTekst kodaTekst kodaOzadje">
+                        <span class="rezerviranaBeseda">public class</span> <span class="tip">Continue </span>{<br>
+                            <span class="prviTab rezerviranaBeseda">public static </span><span class="tip">void</span> <span class="metoda">main</span>(<span class="">String</span>[] <span class="spremenljivka">args</span>) {<br><br>
+
+                                <span class="drugiTab rezerviranaBeseda">for </span>(<span class="tip">int </span><span class="spremenljivka">stevilo</span> = 1; stevilo <= 10; stevilo++) {<br><br>
+                                    <span class="tretjiTab rezerviranaBeseda">if </span>(stevilo >= 5 || stevilo <= 9) {<br>
+                                        <span class="cetrtiTab rezerviranaBeseda">continue</span>;<br>
+                                    <span class="tretjiTab">}</span><br><br>
+                                <span class="drugiTab">System.out.</span><span class="metoda">println</span>(stevilo);<br>
+
+                            <span class="prviTab ">}<br>
+                        <span class=" ">}
+                    </p></code>
+                </div>
+
+                <div class="col-2"></div>
+
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <p class="gradivoTekst">
+                        Program nam izpiše:
+                    </p>
+                </div>
+                <div class="col-1"></div>
+
+                <div class="col-2"></div>
+
+                <div class="col-8">
+                    <code><p class="gradivoTekst kodaTekst kodaOzadje">
+                        1<br>2<br>3<br>4<br>10
+                    </p></code>
+                </div>
+
+                <div class="col-2"></div>
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row text-center">
+                <div class="col-1"></div>
+                <div class="col-10">
+                     
+                    <span class="gradivoTekstVecje">1. Naloga: </span>
+                    <span class="gradivoTekst">Napišite <b>program</b> v programskem jeziku java, ki prebere številko meseca in s pomočjo stavka switch izpiše, koliko dni ima mesec v neprestopnem letu.</span>
+                    <br><span class="gradivoMinimalno">Primer: program prebere število 6 (junij) in izpiše "30"</span>
+
+                </div>
+                <div class="col-1"></div>    
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row text-center">
+                <div class="col-1"></div>
+                <div class="col-10">
+                     
+                    <span class="gradivoTekstVecje">2. Naloga: </span>
+                    <span class="gradivoTekst">Napišite <b>program</b> v programskem jeziku java, ki prebere število procentov in s pomočjo pogojnega operatorja izpiše "opravil", če je uporabnik predmet opravil (dosegel 50 ali več procentov), oziroma izpiše "ni opravil", če uporabnik predmeta ni opravil.</span>
+                    <br><span class="gradivoMinimalno">Primer: program prebere število 72 in izpiše "opravil"</span>
+
+                </div>
+                <div class="col-1"></div>    
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row text-center">
+                <div class="col-1"></div>
+                <div class="col-10">
+                     
+                    <span class="gradivoTekstVecje">3. Naloga: </span>
+                    <span class="gradivoTekst">Napišite <b>program</b> v programskem jeziku java, ki prebere realno število x in s pomočjo pogojnega operatorja izpiše njegovo absolutno vrednost.</span>
+                    <br><span class="gradivoMinimalno">Primer: program prebere število -42.3 in izpiše "42.3"</span>
+
+                </div>
+                <div class="col-1"></div>    
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row text-center">
+                <div class="col-1"></div>
+                <div class="col-10">
+                     
+                    <span class="gradivoTekstVecje">4. Naloga: </span>
+                    <span class="gradivoTekst">Napišite <b>program</b> v programskem jeziku java, ki prebere 3 cela števila in s pomočjo pogojnega operatorja izpiše najmanjšo število.</span>
+                    <br><span class="gradivoMinimalno">Primer: program prebere števila -42, 58, 32 in izpiše "-42"</span>
+
+                </div>
+                <div class="col-1"></div>    
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row text-center">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <span class="gradivoTekstVecje">5. Naloga: </span>
+                    <span class="gradivoTekst">Napišite <b>program</b> v programskem jeziku java, ki prebere celo število in nato izpiše prvih 5 deliteljev tega števila. Nalogo rešite z in brez uporabe stavka break.</span>
+                    <br><span class="gradivoMinimalno">Primer: program prebere števila 24 in izpiše "1, 2, 3, 4, 6"</span>
+
+                </div>
+                <div class="col-1"></div>    
+            </div>
+
+            <hr class="gradivoVodoravno"/>
+
+            <div class="row text-center">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <span class="gradivoTekstVecje">6. Naloga: </span>
+                    <span class="gradivoTekst">Napišite <b>program</b> v programskem jeziku java, ki izpisuje števila deljiva s 3 med 1 in 100. Nalogo rešite z in brez uporabe stavka continue.</span>
+
+                </div>
+                <div class="col-1"></div>    
+            </div>
+
+            <div class="row">
+                <div class="col-12 konecStrani"></div>
+            </div>
+
+            <!-- AVTORSKE PRAVICE, TO JE ŠALA (HEC) -->
+            <div class="mokot">
+                &#169; mokot
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="./knjiznice/js/kodaIndex.js"></script>
+
+    </body>
+
+</html>
